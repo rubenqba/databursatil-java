@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+  <!-- Silenciar mensajes internos de Logback -->
+  <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+
+  <!-- Appender para consola (usado en tests) -->
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- Logger específico para tu biblioteca -->
+  <logger name="com.github.rubenqba.databursatil" level="TRACE" additivity="false">
+    <appender-ref ref="STDOUT"/>
+  </logger>
+
+  <!-- Root logger configurado para WARN (evita spam en tests) -->
+  <root level="WARN">
+    <appender-ref ref="STDOUT"/>
+  </root>
+
+  <!-- Configuración adicional para entorno de testing -->
+  <if condition='"test".equals(System.getProperty("spring.profiles.active"))'>
+    <then>
+      <logger name="org.springframework" level="WARN"/>
+    </then>
+  </if>
+</configuration>

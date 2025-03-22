@@ -1,0 +1,1863 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.databursatil.com/v1/
+
+info:
+  description: Aprende a utilizar nuestra plataforma para acceder a la información del mercado bursátil Mexicano. Todas las consultas requieren del parámetro llamado `token` el cual podrás obtener al crear tu cuenta sin costo desde [https://databursatil.com](https://databursatil.com)
+  termsOfService: https://databursatil.com/terminos.html
+  version: "1.0.0"
+  title: DataBursatil API
+  contact:
+    email: hola@databursatil.com
+
+tags:
+  - name: BMV
+    description: API para Bolsa Mexicana de Valores
+  - name: BIVA
+    description: API para Bolsa Institucional de Valores
+  - name: Bursatil
+    description: API gratuita para México
+  - name: Bolsa
+    description: API bursátil para México
+  - name: Trading
+    description: API gratuita para la bolsa mexicana
+
+security:
+  - token: []
+
+externalDocs:
+  description: "Consulta la documentación original en nuestro sitio web"
+  url: https://databursatil.com/docs.html
+
+paths:
+  /emisoras:
+    get:
+      tags:
+        - Emisoras
+      summary: Filtra y busca información general.
+      x-quota:
+        costo en creditos: 1
+      operationId: emisoras
+      description: Permite buscar, filtrar y obtener información general de las emisoras solicitadas y sus respectivas series.
+      parameters:
+        - name: letra
+          in: query
+          description: Permite filtrar por la letra o palabra ingresada. Este parámetro solo filtra el nombre de la emisora, por lo que no se debe ingrear con serie.
+          required: false
+          schema:
+            type: string
+            format: text
+            description: Permite filtrar por la letra o palabra ingresada. Este parámetro solo filtra el nombre de la emisora, por lo que no se debe ingrear con serie.
+            default: H
+        - name: mercado
+          in: query
+          description: Solo existen dos opciones disponibles&#58; "local" o "global". "local" hace referencia a búsqueda de emisoras que coticen en BMV o BIVA, mientras que "global" hace una búsqueda en el mercado global (antes llamado SIC).
+          required: false
+          schema:
+            type: string
+            description: Solo existen dos opciones disponibles&#58; "local" o "global". "local" hace referencia a búsqueda de emisoras que coticen en BMV o BIVA, mientras que "global" hace una búsqueda en el mercado global (antes llamado SIC).
+            enum:
+              - local
+              - global
+            default: local
+      security:
+        - token: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  "0":
+                    type: object
+                    properties:
+                      "HCITY":
+                        type: object
+                        properties:
+                          "O":
+                            type: object
+                            properties:
+                              "Serie":
+                                type: string
+                                example: "*"
+                              "Razon Social":
+                                type: string
+                                example: "HOTELES CITY EXPRESS, S.A.B. DE C.V."
+                              "ISIN":
+                                type: string
+                                example: "MX01HC000001"
+                              "Bolsa":
+                                type: string
+                                example: "BMV"
+                              "Tipo Valor Descripcion":
+                                type: string
+                                example: "ACCIONES DE EMPRESAS COMERCIALES, INDUSTRIALES Y DE SERVICIOS"
+                              "Tipo Valor ID":
+                                type: string
+                                example: "1"
+                              "Estatus":
+                                type: string
+                                example: "ACTIVA"
+                              "Acciones en Circulacion":
+                                type: integer
+                                example: 408268713
+                              "Rango Historicos":
+                                type: string
+                                example: "2013/06/17 - 2023/10/27"
+                              "Rango Financieros":
+                                type: string
+                                example: "1T_2017, 1T_2018, 1T_2019, 1T_2020, 1T_2021, 1T_2022, 1T_2023, 2T_2016, 2T_2017, 2T_2018, 2T_2019, 2T_2020, 2T_2021, 2T_2022, 2T_2023, 3T_2016, 3T_2017, 3T_2018, 3T_2019, 3T_2020, 3T_2021, 3T_2022, 3T_2023, 4T_2016, 4T_2017, 4T_2018, 4T_2019, 4T_2020, 4T_2021, 4T_2022"
+                  "1":
+                    type: object
+                    properties:
+                      "HERDEZ":
+                        type: object
+                        properties:
+                          "O":
+                            type: object
+                            properties:
+                              "Serie":
+                                type: string
+                                example: "*"
+                              "Razon Social":
+                                type: string
+                                example: "GRUPO HERDEZ, S.A.B. DE C.V."
+                              "ISIN":
+                                type: string
+                                example: "MX01HE010008"
+                              "Bolsa":
+                                type: string
+                                example: "BMV"
+                              "Tipo Valor Descripcion":
+                                type: string
+                                example: "ACCIONES DE EMPRESAS COMERCIALES, INDUSTRIALES Y DE SERVICIOS"
+                              "Tipo Valor ID":
+                                type: string
+                                example: "1"
+                              "Estatus":
+                                type: string
+                                example: "ACTIVA"
+                              "Acciones en Circulacion":
+                                type: integer
+                                example: 390761484
+                              "Rango Historicos":
+                                type: string
+                                example: "2010/01/05 - 2023/10/27"
+                              "Rango Financieros":
+                                type: string
+                                example: "1T_2017, 1T_2018, 1T_2019, 1T_2020, 1T_2021, 1T_2022, 1T_2023, 2T_2016, 2T_2017, 2T_2018, 2T_2019, 2T_2020, 2T_2021, 2T_2022, 2T_2023, 3T_2016, 3T_2017, 3T_2018, 3T_2019, 3T_2020, 3T_2021, 3T_2022, 3T_2023, 4T_2016, 4T_2017, 4T_2018, 4T_2019, 4T_2020, 4T_2021, 4T_2022"
+                  "2":
+                    type: object
+                    properties:
+                      "HIMEXSA":
+                        type: object
+                        properties:
+                          "O":
+                            type: object
+                            properties:
+                              "Serie":
+                                type: string
+                                example: "A"
+                              "Razon Social":
+                                type: string
+                                example: "HIMEXSA, S.A.B. DE C.V."
+                              "ISIN":
+                                type: string
+                                example: "MX01HI070008"
+                              "Bolsa":
+                                type: string
+                                example: "BMV"
+                              "Tipo Valor Descripcion":
+                                type: string
+                                example: "ACCIONES DE EMPRESAS COMERCIALES, INDUSTRIALES Y DE SERVICIOS"
+                              "Tipo Valor ID":
+                                type: string
+                                example: "1"
+                              "Estatus":
+                                type: string
+                                example: "SUSPENDIDA"
+                              "Acciones en Circulacion":
+                                type: integer
+                                example: 139440000
+                              "Rango Historicos":
+                                type: string
+                                example: "2010/01/05 - 2018/02/14"
+                              "Rango Financieros":
+                                type: string
+                                example: "1T_2017, 1T_2018, 1T_2019, 2T_2016, 2T_2017, 2T_2018, 3T_2016, 3T_2017, 3T_2018, 4T_2016, 4T_2017, 4T_2018"
+                      1:
+                        type: object
+                        properties:
+                          "Serie":
+                            type: string
+                            example: "B"
+                          "Razon Social":
+                            type: string
+                            example: "HIMEXSA, S.A.B. DE C.V."
+                          "ISIN":
+                            type: string
+                            example: "MX01HI070016"
+                          "Bolsa":
+                            type: string
+                            example: "BMV"
+                          "Tipo Valor Descripcion":
+                            type: string
+                            example: "ACCIONES DE EMPRESAS COMERCIALES, INDUSTRIALES Y DE SERVICIOS"
+                          "Tipo Valor ID":
+                            type: string
+                            example: "1"
+                          "Estatus":
+                            type: string
+                            example: "SUSPENDIDA"
+                          "Acciones en Circulacion":
+                            type: integer
+                            example: 9337
+                          "Rango Historicos":
+                            type: string
+                            example:  "2014/12/31 - 2018/02/14"
+                          "Rango Financieros":
+                            type: string
+                            example: "1T_2017, 1T_2018, 1T_2019, 2T_2016, 2T_2017, 2T_2018, 3T_2016, 3T_2017, 3T_2018, 4T_2016, 4T_2017, 4T_2018"
+        '401':
+          description: Errores en autenticación
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/NoAutorizado1'
+                  - $ref: '#/components/schemas/NoAutorizado2'
+                  - $ref: '#/components/schemas/NoAutorizado3'
+                  - $ref: '#/components/schemas/NoAutorizado4'
+                  - $ref: '#/components/schemas/NoAutorizado5'
+                  - $ref: '#/components/schemas/NoAutorizado6'
+
+  /precios:
+    get:
+      tags:
+        - Precios
+      summary: Consulta cotizaciones simples.
+      operationId: precios
+      description: Último precio, precio promedio ponderado, cambio porcentual y monetario de la emisora, serie y bolsa solicitada.
+      parameters:
+        - name: emisora_serie
+          in: query
+          description: Emisora y serie de la cual se desea solicitar precios. El formato es el siguiente&#58; "AMX" es la emisora y "B" la serie, por lo que "AMXB" es un ejemplo del parámetro emisora_serie.
+          required: true
+          schema:
+            type: string
+            description: Emisora y serie de la cual se desea solicitar precios. El formato es el siguiente&#58; "AMX" es la emisora y "B" la serie, por lo que "AMXB" es un ejemplo del parámetro emisora_serie.
+            default: AMXB
+        - name: bolsa
+          in: query
+          description: Especifica el origen de las cotizaciones. Solo existen dos opciones disponibles, juntas o combinadas "BMV" y/o "BIVA". En caso de usarlas juntas, deben ir separadas por una coma sin espacios.
+          required: true
+          schema:
+            type: string
+            description: specifica el origen de las cotizaciones. Solo existen dos opciones disponibles, juntas o combinadas "BMV" y/o "BIVA". En caso de usarlas juntas, deben ir separadas por una coma sin espacios.
+            enum:
+              - BMV
+              - BIVA
+              - BMV,BIVA
+              - BIVA,BMV
+            default: BMV,BIVA
+      security:
+        - token: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  "BMV":
+                    type: object
+                    properties:
+                      "ultimo":
+                        type: number
+                        example: 19.86
+                      "ppp":
+                        type: number
+                        example: 19.81
+                      "cambio%":
+                        type: number
+                        example: -0.25
+                      "cambio$":
+                        type: number
+                        example: -0.05
+                      "tiempo":
+                        type: string
+                        example: "2022-03-10 03:00:00"
+                  "BIVA":
+                    type: object
+                    properties:
+                      "ultimo":
+                        type: number
+                        example: 19.85
+                      "ppp":
+                        type: number
+                        example: 0.0
+                      "cambio%":
+                        type: number
+                        example: -0.05
+                      "cambio$":
+                        type: number
+                        example: -0.01
+                      "tiempo":
+                        type: string
+                        example: '2022-03-10 03:09:00'
+        '401':
+          description: Errores en autenticación
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/NoAutorizado1'
+                  - $ref: '#/components/schemas/NoAutorizado2'
+                  - $ref: '#/components/schemas/NoAutorizado3'
+                  - $ref: '#/components/schemas/NoAutorizado4'
+                  - $ref: '#/components/schemas/NoAutorizado5'
+                  - $ref: '#/components/schemas/NoAutorizado6'
+
+  /intradia:
+    get:
+      tags:
+        - Intradia
+      summary: Consulta cotizaciones básicas.
+      x-quota:
+        costo en creditos: 2
+      operationId: intradia
+      description: Último precio, precio promedio ponderado, anterior, máximo, mínimo, cambio porcentual y monetario de la emisora, serie y bolsa solicitada.
+      parameters:
+        - name: emisora_serie
+          in: query
+          description: Emisora y serie de la cual se desea solicitar precios. El formato es el siguiente&#58; "CEMEX" es la emisora y "CPO" la serie, por lo que "CEMEXCPO" es un ejemplo del parámetro emisora_serie.
+          required: true
+          schema:
+            type: string
+            description: Emisora y serie de la cual se desea solicitar precios. El formato es el siguiente&#58; "CEMEX" es la emisora y "CPO" la serie, por lo que "CEMEXCPO" es un ejemplo del parámetro emisora_serie.
+            default: CEMEXCPO
+        - name: bolsa
+          in: query
+          description: Especifica el origen de las cotizaciones. Solo existen dos opciones disponibles, juntas o combinadas "BMV" y/o "BIVA". En caso de usarlas juntas, deben ir separadas por una coma sin espacios.
+          required: true
+          schema:
+            type: string
+            description: specifica el origen de las cotizaciones. Solo existen dos opciones disponibles, juntas o combinadas "BMV" y/o "BIVA". En caso de usarlas juntas, deben ir separadas por una coma sin espacios.
+            enum:
+              - BMV
+              - BIVA
+              - BMV,BIVA
+              - BIVA,BMV
+            default: BMV,BIVA
+      security:
+        - token: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  "BMV":
+                    type: object
+                    properties:
+                      "ultimo":
+                        type: number
+                        example: 19.86
+                      "ppp":
+                        type: number
+                        example: 19.81
+                      "anterior":
+                        type: number
+                        example: 19.86
+                      "maximo":
+                        type: number
+                        example: 20.03
+                      "minimo":
+                        type: number
+                        example: 19.79
+                      "cambio%":
+                        type: number
+                        example: -0.25
+                      "cambio$":
+                        type: number
+                        example: -0.05
+                      "tiempo":
+                        type: string
+                        example: "2022-03-10 03:00:00"
+                  "BIVA":
+                    type: object
+                    properties:
+                      "ultimo":
+                        type: number
+                        example: 19.85
+                      "ppp":
+                        type: number
+                        example: 0.0
+                      "anterior":
+                        type: number
+                        example: 19.86
+                      "maximo":
+                        type: number
+                        example: 20.02
+                      "minimo":
+                        type: number
+                        example: 19.79
+                      "cambio%":
+                        type: number
+                        example: -0.05
+                      "cambio$":
+                        type: number
+                        example: -0.01
+                      "tiempo":
+                        type: string
+                        example: '2022-03-10 03:09:00'
+        '401':
+          description: Errores en autenticación
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/NoAutorizado1'
+                  - $ref: '#/components/schemas/NoAutorizado2'
+                  - $ref: '#/components/schemas/NoAutorizado3'
+                  - $ref: '#/components/schemas/NoAutorizado4'
+                  - $ref: '#/components/schemas/NoAutorizado5'
+                  - $ref: '#/components/schemas/NoAutorizado6'
+
+  /intradia-plus:
+    get:
+      tags:
+        - Intradia-plus
+      summary: Consulta cotizaciones completas.
+      x-quota:
+        costo en creditos: 3
+      operationId: intradia-plus
+      description: Último precio, precio promedio ponderado, anterior, máximo, mínimo, volumen, operaciones, importe, cambio porcentual y monetario de la emisora, serie y bolsa solicitada.
+      parameters:
+        - name: emisora_serie
+          in: query
+          description: Emisora y serie de la cual se desea solicitar precios. El formato es el siguiente&#58; "ALSEA" es la emisora y "**" la serie, por lo que "ALSEA*" es un ejemplo del parámetro emisora_serie.
+          required: true
+          schema:
+            type: string
+            description: Emisora y serie de la cual se desea solicitar precios. El formato es el siguiente&#58; "ALSEA" es la emisora y "*" la serie, por lo que "ALSEA*" es un ejemplo del parámetro emisora_serie.
+            default: ALSEA*
+        - name: bolsa
+          in: query
+          description: Especifica el origen de las cotizaciones. Solo existen dos opciones disponibles, juntas o combinadas "BMV" y/o "BIVA". En caso de usarlas juntas, deben ir separadas por una coma sin espacios.
+          required: true
+          schema:
+            type: string
+            description: Especifica el origen de las cotizaciones. Solo existen dos opciones disponibles, juntas o combinadas "BMV" y/o "BIVA". En caso de usarlas juntas, deben ir separadas por una coma sin espacios.
+            enum:
+              - BMV
+              - BIVA
+              - BMV,BIVA
+              - BIVA,BMV
+            default: BMV,BIVA
+      security:
+        - token: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  "BMV":
+                    type: object
+                    properties:
+                      "ultimo":
+                        type: number
+                        example: 19.86
+                      "ppp":
+                        type: number
+                        example: 19.81
+                      "anterior":
+                        type: number
+                        example: 19.86
+                      "maximo":
+                        type: number
+                        example: 20.03
+                      "minimo":
+                        type: number
+                        example: 19.79
+                      "cambio%":
+                        type: number
+                        example: -0.25
+                      "cambio$":
+                        type: number
+                        example: -0.05
+                      "volumen":
+                        type: number
+                        example: 2535288.0
+                      "operaciones":
+                        type: number
+                        example:  8826.0
+                      "importe":
+                        type: number
+                        example: 117520843.46
+                      "tiempo":
+                        type: string
+                        example: "2022-03-10 03:00:00"
+                  "BIVA":
+                    type: object
+                    properties:
+                      "ultimo":
+                        type: number
+                        example: 19.85
+                      "ppp":
+                        type: number
+                        example: 0.0
+                      "anterior":
+                        type: number
+                        example: 19.86
+                      "maximo":
+                        type: number
+                        example: 20.02
+                      "minimo":
+                        type: number
+                        example: 19.79
+                      "cambio%":
+                        type: number
+                        example: -0.05
+                      "cambio$":
+                        type: number
+                        example: -0.01
+                      "volumen":
+                        type: number
+                        example: 135392.0
+                      "operaciones":
+                        type: number
+                        example:  834.0
+                      "importe":
+                        type: number
+                        example: 6308470.57
+                      "tiempo":
+                        type: string
+                        example: '2022-03-10 03:09:00'
+        '401':
+          description: Errores en autenticación
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/NoAutorizado1'
+                  - $ref: '#/components/schemas/NoAutorizado2'
+                  - $ref: '#/components/schemas/NoAutorizado3'
+                  - $ref: '#/components/schemas/NoAutorizado4'
+                  - $ref: '#/components/schemas/NoAutorizado5'
+                  - $ref: '#/components/schemas/NoAutorizado6'
+
+  /cotizaciones:
+    get:
+      tags:
+        - Cotizaciones
+      summary: Consulta cotizaciones completas y personalizando conceptos y multi-emisora
+      x-quota:
+        costo en creditos: 1
+      operationId: cotizaciones
+      description: Último precio, precio promedio ponderado, anterior, máximo, mínimo, volumen, operaciones, importe, cambio porcentual y monetario de hasta 50 emisoras al mismo tiempo personalizando los conceptos.
+      parameters:
+        - name: emisora_serie
+          in: query
+          description: Emisora y serie de la cual se desea solicitar precios. El formato es el siguiente&#58; "ALSEA" es la emisora y "**" la serie, por lo que "ALSEA*" es un ejemplo del parámetro emisora_serie. Multiples emisoras con serie pueden ser agregadas separando por comas.
+          required: true
+          schema:
+            type: string
+            description: Emisora y serie de la cual se desea solicitar precios. El formato es el siguiente&#58; "ALSEA" es la emisora y "*" la serie, por lo que "ALSEA*" es un ejemplo del parámetro emisora_serie.
+            default: WALMEX*,CEMEXCPO,NVDA*
+        - name: bolsa
+          in: query
+          description: Especifica el origen de las cotizaciones. Solo existen dos opciones disponibles, juntas o combinadas "BMV" y/o "BIVA". En caso de usarlas juntas, deben ir separadas por una coma sin espacios.
+          required: true
+          schema:
+            type: string
+            description: Especifica el origen de las cotizaciones. Solo existen dos opciones disponibles, juntas o combinadas "BMV" y/o "BIVA". En caso de usarlas juntas, deben ir separadas por una coma sin espacios.
+            enum:
+              - BMV
+              - BIVA
+              - BMV,BIVA
+              - BIVA,BMV
+            default: BMV,BIVA
+        - name: concepto
+          in: query
+          description: Concepto que se desea obtener. Significando "U" es "ultimo", "P" es "ppp, "A" es "anterior", "X" es "maximo", "N" es "minimo", "C" es "cambio po rciento", "M" es "cambio en pesos", "V" es "volumen operado", "O" es "operaciones", "I" es "importe acumulado"
+          required: true
+          schema:
+            type: string
+            description: Emisoras y series de la cual se desea solicitar precios.
+            default: U,P,A,X,N,C,M,V,O,I
+      security:
+        - token: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  "WALMEX*":
+                    type: object
+                    properties:
+                      "BMV":
+                        type: object
+                        properties:
+                          "U":
+                            type: number
+                            example: 19.86
+                          "P":
+                            type: number
+                            example: 19.81
+                          "A":
+                            type: number
+                            example: 19.86
+                          "X":
+                            type: number
+                            example: 20.03
+                          "N":
+                            type: number
+                            example: 19.79
+                          "C":
+                            type: number
+                            example: -0.25
+                          "M":
+                            type: number
+                            example: -0.05
+                          "V":
+                            type: number
+                            example: 2535288.0
+                          "O":
+                            type: number
+                            example:  8826.0
+                          "I":
+                            type: number
+                            example: 117520843.46
+                          "F":
+                            type: string
+                            example: "2022-03-10 03:00:00"
+                      "BIVA":
+                        type: object
+                        properties:
+                          "U":
+                            type: number
+                            example: 19.85
+                          "P":
+                            type: number
+                            example: 0.0
+                          "A":
+                            type: number
+                            example: 19.86
+                          "X":
+                            type: number
+                            example: 20.02
+                          "N":
+                            type: number
+                            example: 19.79
+                          "C":
+                            type: number
+                            example: -0.05
+                          "M":
+                            type: number
+                            example: -0.01
+                          "V":
+                            type: number
+                            example: 135392.0
+                          "O":
+                            type: number
+                            example:  834.0
+                          "I":
+                            type: number
+                            example: 6308470.57
+                          "F":
+                            type: string
+                            example: '2022-03-10 03:09:00'
+                  "NVDA*":
+                    type: object
+                    properties:
+                      "BMV":
+                        type: object
+                        properties:
+                          "U":
+                            type: number
+                            example: 19.86
+                          "P":
+                            type: number
+                            example: 19.81
+                          "A":
+                            type: number
+                            example: 19.86
+                          "X":
+                            type: number
+                            example: 20.03
+                          "N":
+                            type: number
+                            example: 19.79
+                          "C":
+                            type: number
+                            example: -0.25
+                          "M":
+                            type: number
+                            example: -0.05
+                          "V":
+                            type: number
+                            example: 2535288.0
+                          "O":
+                            type: number
+                            example:  8826.0
+                          "I":
+                            type: number
+                            example: 117520843.46
+                          "F":
+                            type: string
+                            example: "2022-03-10 03:00:00"
+                      "BIVA":
+                        type: object
+                        properties:
+                          "U":
+                            type: number
+                            example: 19.85
+                          "P":
+                            type: number
+                            example: 0.0
+                          "A":
+                            type: number
+                            example: 19.86
+                          "X":
+                            type: number
+                            example: 20.02
+                          "N":
+                            type: number
+                            example: 19.79
+                          "C":
+                            type: number
+                            example: -0.05
+                          "M":
+                            type: number
+                            example: -0.01
+                          "V":
+                            type: number
+                            example: 135392.0
+                          "O":
+                            type: number
+                            example:  834.0
+                          "I":
+                            type: number
+                            example: 6308470.57
+                          "F":
+                            type: string
+                            example: '2022-03-10 03:09:00'
+        '401':
+          description: Errores en autenticación
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/NoAutorizado1'
+                  - $ref: '#/components/schemas/NoAutorizado2'
+                  - $ref: '#/components/schemas/NoAutorizado3'
+                  - $ref: '#/components/schemas/NoAutorizado4'
+                  - $ref: '#/components/schemas/NoAutorizado5'
+                  - $ref: '#/components/schemas/NoAutorizado6'
+
+  /top:
+    get:
+      tags:
+        - Top
+      summary: Consulta principales movimientos del mercado.
+      x-quota:
+        costo en creditos: 1
+      operationId: top
+      description: Filtra cotizaciones por principales alzas, bajas, operaciones, importe operado o volumen, así como por mercado y bolsa.
+      parameters:
+        - name: variables
+          in: query
+          description: Especifica el tipo de filtro requerido. Opciones disponibles&#58; "suben", "bajan", "importe", "volumen" y/o "operaciones". Se pueden usar juntas o or separado. El orden de los factores no altera el resultado.
+          required: true
+          schema:
+            type: string
+            description: Especifica el tipo de filtro requerido. Opciones disponibles&#58; "suben", "bajan", "importe", "volumen" y/o "operaciones". Se pueden usar juntas o or separado. El orden de los factores no altera el resultado.
+            default: suben,bajan,importe,volumen,operaciones
+        - name: bolsa
+          in: query
+          description: Especifica el origen de las cotizaciones. Solo existen dos opciones disponibles, no se pueden combinar&#58; "BMV" y/o "BIVA".
+          required: true
+          schema:
+            type: string
+            description: Especifica el origen de las cotizaciones. Solo existen dos opciones disponibles, no se pueden combinar&#58; "BMV" y/o "BIVA".
+            enum:
+              - BMV
+              - BIVA
+            default: BMV
+        - name: cantidad
+          in: query
+          description: Especifica la cantidad de emisoras solicitadas por filtro declarado
+          required: true
+          schema:
+            type: integer
+            description: Emisora y serie de la cual se desea solicitar precios. El formato es el siguiente&#58; "ALSEA" es la emisora y "*" la serie, por lo que "ALSEA*" es un ejemplo del parámetro emisora_serie.
+            default: 5
+        - name: mercado
+          in: query
+          description: Especifica el mercado de las cotizaciones. Solo existen dos opciones disponibles&#58; "local" o "global".
+          required: true
+          schema:
+            type: string
+            description: Especifica el mercado de las cotizaciones. Solo existen dos opciones disponibles&#58; "local" o "global".
+            default: local
+      security:
+        - token: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  SUBEN:
+                    type: object
+                    properties:
+                      0:
+                        type: object
+                        properties:
+                          emisora_serie:
+                            type: string
+                            example: LABB
+                          ultimo:
+                            type: number
+                            example: 15.7
+                          cambio%:
+                            type: number
+                            example: 5.18
+                      1:
+                        type: object
+                        properties:
+                          emisora_serie:
+                            type: string
+                            example: SORIANAB
+                          ultimo:
+                            type: number
+                            example: 24.99
+                          cambio%:
+                            type: number
+                            example: 4.17
+                  BAJAN:
+                    type: object
+                    properties:
+                      0:
+                        type: object
+                        properties:
+                          emisora_serie:
+                            type: string
+                            example: VALUEGFO
+                          ultimo:
+                            type: number
+                            example: 95.0
+                          cambio%:
+                            type: number
+                            example: -7.19
+                      1:
+                        type: object
+                        properties:
+                          emisora_serie:
+                            type: string
+                            example: HOMEX*
+                          ultimo:
+                            type: number
+                            example: 0.03
+                          cambio%:
+                            type: number
+                            example: -7.14
+                  VOLUMEN:
+                    type: object
+                    properties:
+                      0:
+                        type: object
+                        properties:
+                          emisora_serie:
+                            type: string
+                            example: AMXL
+                          ultimo:
+                            type: number
+                            example: 17.02
+                          volumen:
+                            type: integer
+                            example: 75799421
+                      1:
+                        type: object
+                        properties:
+                          emisora_serie:
+                            type: string
+                            example: CEMEXCPO
+                          ultimo:
+                            type: number
+                            example: 7.62
+                          volumen:
+                            type: integer
+                            example: 28160928
+                  IMPORTE:
+                    type: object
+                    properties:
+                      0:
+                        type: object
+                        properties:
+                          emisora_serie:
+                            type: string
+                            example: AMXL
+                          ultimo:
+                            type: number
+                            example: 17.02
+                          importe:
+                            type: number
+                            example: 1293506536.56
+                      1:
+                        type: object
+                        properties:
+                          emisora_serie:
+                            type: string
+                            example: WALMEX*
+                          ultimo:
+                            type: number
+                            example: 72.95
+                          importe:
+                            type: number
+                            example: 870686951.55
+                  OPERACIONES:
+                    type: object
+                    properties:
+                      0:
+                        type: object
+                        properties:
+                          emisora_serie:
+                            type: string
+                            example: GENTERA*
+                          ultimo:
+                            type: number
+                            example: 17.32
+                          operaciones:
+                            type: integer
+                            example: 24104
+                      1:
+                        type: object
+                        properties:
+                          emisora_serie:
+                            type: string
+                            example: WALMEX*
+                          ultimo:
+                            type: number
+                            example: 72.95
+                          operaciones:
+                            type: integer
+                            example: 22862
+        '401':
+          description: Errores en autenticación
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/NoAutorizado1'
+                  - $ref: '#/components/schemas/NoAutorizado2'
+                  - $ref: '#/components/schemas/NoAutorizado3'
+                  - $ref: '#/components/schemas/NoAutorizado4'
+                  - $ref: '#/components/schemas/NoAutorizado5'
+                  - $ref: '#/components/schemas/NoAutorizado6'
+
+  /historicos:
+    get:
+      tags:
+        - Historicos
+      summary: Consulta precios históricos.
+      x-quota:
+        costo en creditos: 1
+      operationId: historicos
+      description: Precios históricos al cierre de la emisora y serie solicitada.
+      parameters:
+        - name: emisora_serie
+          in: query
+          description: Emisora y serie de la cual se desea solicitar precios. El formato es el siguiente&#58; "ALFA" es la emisora y "A" la serie, por lo que "ALFAA" es un ejemplo del parámetro emisora_serie.
+          required: true
+          schema:
+            type: string
+            description: Emisora y serie de la cual se desea solicitar precios. El formato es el siguiente&#58; "ALFA" es la emisora y "A" la serie, por lo que "ALFAA" es un ejemplo del parámetro emisora_serie.
+            default: ALFAA
+        - name: inicio
+          in: query
+          description: Fecha inicial del rango de precios solicitados en formato&#58; AAA-MM-DD
+          required: true
+          schema:
+            type: string
+            format: date
+            description: Fecha inicial del rango de precios solicitados en formato&#58; AAA-MM-DD
+            default: 2023-01-01
+        - name: final
+          in: query
+          description: Fecha final del rango de precios solicitados en formato&#58; AAA-MM-DD
+          required: true
+          schema:
+            type: string
+            format: date
+            description: Fecha inicial del rango de precios solicitados en formato&#58; AAA-MM-DD
+            default: 2023-12-31
+      security:
+        - token: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  "2020/01/10":
+                    type: array
+                    items:
+                      type: number
+                    example: [7.18, 186727302.52]
+                  "2020/01/13":
+                    type: array
+                    items:
+                      type: number
+                    example: [7.15, 249928702.71]
+                  "2020/01/14":
+                    type: array
+                    items:
+                      type: number
+                    example: [7.12, 232931339.17]
+                  "2020/01/15":
+                    type: array
+                    items:
+                      type: number
+                    example: [6.95, 201492286.14]
+        '401':
+          description: Errores en autenticación
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/NoAutorizado1'
+                  - $ref: '#/components/schemas/NoAutorizado2'
+                  - $ref: '#/components/schemas/NoAutorizado3'
+                  - $ref: '#/components/schemas/NoAutorizado4'
+                  - $ref: '#/components/schemas/NoAutorizado5'
+                  - $ref: '#/components/schemas/NoAutorizado6'
+
+  /financieros:
+    get:
+      tags:
+        - Financieros
+      summary: Consulta estados financieros.
+      x-quota:
+        costo en creditos: 500
+      operationId: financieros
+      description: Estados financieros (Situacion financiera, Flujos de efectivo y Resultados) del periodo y emisora solicitada.
+      parameters:
+        - name: emisora
+          in: query
+          description: Emisora de la cual se desea solicitar precios. El formato es el siguiente&#58; "GMEXICO" es la emisora.
+          required: true
+          schema:
+            type: string
+            description: Emisora de la cual se desea solicitar precios. El formato es el siguiente&#58; "GMEXICO" es la emisora.
+            default: GMEXICO
+        - name: periodo
+          in: query
+          description: Especifica el periodo solicitados de los estados financieros. Por ejemplo&#58; '1T_2030' (primer trimestre del 2023).
+          required: true
+          schema:
+            type: string
+            description: Especifica el periodo solicitados de los estados financieros. Por ejemplo&#58; '1T_2023' (primer trimestre del 2023).
+            default: 1T_2023
+        - name: financieros
+          in: query
+          description: Especifica la lista de estados financieros solicitados.
+          required: true
+          schema:
+            type: string
+            description: Especifica la lista de estados financieros solicitados.
+            enum:
+              - posicion
+              - flujos
+              - resultado_trimestre
+              - resultado_acumulado
+            default: posicion
+      security:
+        - token: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  "posicion":
+                    type: object
+                    properties:
+                      "2021-06-30":
+                        type: object
+                        properties:
+                          "CashAndCashEquivalents":
+                            type: array
+                            items:
+                              type: number
+                            example: ["Efectivo y equivalentes de efectivo", 39993054000]
+                          "TradeAndOtherCurrentReceivables":
+                            type: array
+                            items:
+                              type: number
+                            example: ["Clientes y otras cuentas por cobrar", 168668851000]
+                          "CurrentTaxAssetsCurrent":
+                            type: array
+                            items:
+                              type: number
+                            example: ["Impuestos por recuperar", 37138689000]
+                          "OtherCurrentFinancialAssets":
+                            type: array
+                            items:
+                              type: number
+                            example: ["Otros activos financieros", 72032254000]
+                          "Inventories":
+                            type: array
+                            items:
+                              type: number
+                            example: ["Inventarios", 31699417000]
+                          "CurrentBiologicalAssets":
+                            type: array
+                            items:
+                              type: number
+                            example: ["Activos biológicos", 0]
+                          "OtherCurrentNonfinancialAssets":
+                            type: array
+                            items:
+                              type: number
+                            example: ["Otros activos no financieros", 15386455000]
+                  "resultado_trimestre":
+                    type: object
+                    properties:
+                      "2021-04-01_2021-06-30":
+                        type: object
+                        properties:
+                          "Revenue":
+                            type: array
+                            items:
+                              type: number
+                            example: ["Ingresos", 252507320000]
+                          "CostOfSales":
+                            type: array
+                            items:
+                              type: number
+                            example: ["Costo de ventas", 156280043000]
+                          "GrossProfit":
+                            type: array
+                            items:
+                              type: number
+                            example: ["Utilidad bruta", 96227277000]
+                          "DistributionCosts":
+                            type: array
+                            items:
+                              type: number
+                            example: ["Gastos de administración", 15286812000]
+                          "OtherIncome":
+                            type: array
+                            items:
+                              type: number
+                            example: ["Otros ingresos", 0]
+
+        '401':
+          description: Errores en autenticación
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/NoAutorizado1'
+                  - $ref: '#/components/schemas/NoAutorizado2'
+                  - $ref: '#/components/schemas/NoAutorizado3'
+                  - $ref: '#/components/schemas/NoAutorizado4'
+                  - $ref: '#/components/schemas/NoAutorizado5'
+                  - $ref: '#/components/schemas/NoAutorizado6'
+
+  /descargas:
+    get:
+      tags:
+        - Descargas
+      summary: Valuaciones del mercado de dinero mexicano y hechos al cierre del día.
+      x-quota:
+        costo en creditos: 5
+      operationId: descargas
+      description: Valuaciones del mercado de dinero mexicano y hechos al cierre del día.
+      parameters:
+        - name: archivo
+          in: query
+          description: Describe cuál documento se desea descargar. Solo hay dos opciones disponibles "hechos" o "guber".
+          required: true
+          schema:
+            type: string
+            description: Describe cuál documento se desea descargar. Solo hay dos opciones disponibles "hechos" o "guber".
+            default: guber
+        - name: fecha
+          in: query
+          description: Especifica la fecha del archivo que se desea descargar en formato YYYY-MM-DD.
+          required: true
+          schema:
+            type: string
+            description: Especifica la fecha del archivo que se desea descargar en formato YYYY-MM-DD.
+            default: 2023-10-27
+      security:
+        - token: []
+      responses:
+        '200':
+          description: Respuesta exitosa en formato ZIP
+          content:
+            application/zip:
+              schema:
+                type: string
+                format: binary
+              example: guber_2023-10-27.csv
+        '401':
+          description: Errores en autenticación
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/NoAutorizado1'
+                  - $ref: '#/components/schemas/NoAutorizado2'
+                  - $ref: '#/components/schemas/NoAutorizado3'
+                  - $ref: '#/components/schemas/NoAutorizado4'
+                  - $ref: '#/components/schemas/NoAutorizado5'
+                  - $ref: '#/components/schemas/NoAutorizado6'
+
+
+  /dividendos:
+    get:
+      tags:
+        - Dividendos
+      summary: Consulta dividendos decretados.
+      x-quota:
+        costo en creditos: 5
+      operationId: dividendos
+      description: Dividendo más reciente e histórico de pagos de la emisora y serie seleccionada.
+      parameters:
+        - name: emisora_serie
+          in: query
+          description: Emisora y serie de la cual se desea solicitar el/los dividendo(s). El formato es el siguiente&#58; "ALFA" es la emisora y "A" la serie, por lo que "ALFAA" es un ejemplo del parámetro emisora_serie.
+          required: true
+          schema:
+            type: string
+            description: Emisora y serie de la cual se desea solicitar el/los dividendo(s). El formato es el siguiente&#58; "ALFA" es la emisora y "A" la serie, por lo que "ALFAA" es un ejemplo del parámetro emisora_serie.
+            default: ALFAA
+      security:
+        - token: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  "reciente":
+                    type: object
+                    properties:
+                      "2022-03-16":
+                        type: object
+                        properties:
+                          "pago":
+                            type: number
+                            example: 0.04
+                          "tipo":
+                            type: string
+                            example: "DIVIDENDO EN EFECTIVO"
+                          "divisa":
+                            type: string
+                            example: "MXN"
+                          "fechaexcupon":
+                            type: string
+                            example: "2022-03-14"
+                  "historico":
+                    type: object
+                    properties:
+                      "2018-03-09":
+                        type: object
+                        properties:
+                          "pago":
+                            type: number
+                            example: 0.0332
+                          "tipo":
+                            type: string
+                            example: "DIVIDENDO EN EFECTIVO"
+                      "2019-03-11":
+                        type: object
+                        properties:
+                          "pago":
+                            type: number
+                            example: 0.02
+                          "tipo":
+                            type: string
+                            example: "DIVIDENDO EN EFECTIVO"
+                      "2019-09-12":
+                        type: object
+                        properties:
+                          "pago":
+                            type: number
+                            example: 0.02
+                          "tipo":
+                            type: string
+                            example: "DIVIDENDO EN EFECTIVO"
+                      "2020-03-09":
+                        type: object
+                        properties:
+                          "pago":
+                            type: number
+                            example: 0.02
+                          "tipo":
+                            type: string
+                            example: "DIVIDENDO EN EFECTIVO"
+                      "2021-01-05":
+                        type: object
+                        properties:
+                          "pago":
+                            type: number
+                            example: 0.0051
+                          "tipo":
+                            type: string
+                            example: "DIVIDENDO EN EFECTIVO"
+                      "2021-04-07":
+                        type: object
+                        properties:
+                          "pago":
+                            type: number
+                            example: 0.02
+                          "tipo":
+                            type: string
+                            example: "DIVIDENDO EN EFECTIVO"
+                      "2022-03-16":
+                        type: object
+                        properties:
+                          "pago":
+                            type: number
+                            example: 0.04
+                          "tipo":
+                            type: string
+                            example: "DIVIDENDO EN EFECTIVO"
+        '401':
+          description: Errores en autenticación
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/NoAutorizado1'
+                  - $ref: '#/components/schemas/NoAutorizado2'
+                  - $ref: '#/components/schemas/NoAutorizado3'
+                  - $ref: '#/components/schemas/NoAutorizado4'
+                  - $ref: '#/components/schemas/NoAutorizado5'
+                  - $ref: '#/components/schemas/NoAutorizado6'
+
+  /indices:
+    get:
+      tags:
+        - Indices
+      summary: Consulta cotizaciones de índices.
+      x-quota:
+        costo en creditos: 11
+      operationId: indices
+      description: Último precio, anterior, máximo, mínimo, cambio porcentual, cambio en unidades y volumen de los principales índices bursátiles internacionales.
+      security:
+        - token: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  "IPC":
+                    type: object
+                    properties:
+                      "nombre":
+                        type: string
+                        example: "Indice de Precios Y Cotizaciones"
+                      "último":
+                        type: number
+                        example: 19.81
+                      "anterior":
+                        type: number
+                        example: -0.25
+                      "maximo":
+                        type: number
+                        example: -0.05
+                      "minimo":
+                        type: number
+                        example: -0.05
+                      "cambio%":
+                        type: number
+                        example: -0.95
+                      "cambio$":
+                        type: number
+                        example: -452.13
+                      "volumen":
+                        type: number
+                        example: 87461423
+                      "cambioytd%":
+                        type: number
+                        example: -11.2635
+                      "tiempo":
+                        type: string
+                        example: "2022-08-26 15:00:00"
+                  "FTSEBIVA":
+                    type: object
+                    properties:
+                      "nombre":
+                        type: string
+                        example: "Indice FTSE BIVA"
+                      "último":
+                        type: number
+                        example: 980.91
+                      "anterior":
+                        type: number
+                        example: 991.34
+                      "maximo":
+                        type: number
+                        example: 991.34
+                      "minimo":
+                        type: number
+                        example: 974.69
+                      "cambio%":
+                        type: number
+                        example: -1.05
+                      "cambio$":
+                        type: number
+                        example: -10.43
+                      "volumen":
+                        type: number
+                        example: 0
+                      "cambioytd%":
+                        type: number
+                        example: -10.9284
+                      "tiempo":
+                        type: string
+                        example: "2022-08-26 15:00:00"
+        '401':
+          description: Errores en autenticación
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/NoAutorizado1'
+                  - $ref: '#/components/schemas/NoAutorizado2'
+                  - $ref: '#/components/schemas/NoAutorizado3'
+                  - $ref: '#/components/schemas/NoAutorizado4'
+                  - $ref: '#/components/schemas/NoAutorizado5'
+                  - $ref: '#/components/schemas/NoAutorizado6'
+
+  /tasas:
+    get:
+      tags:
+        - Tasas
+      summary: Consulta tasas
+      x-quota:
+        costo en creditos: 5
+      operationId: tasas
+      description: Tasas del mercado de dinero.
+      security:
+        - token: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  "CETE 28":
+                    type: object
+                    properties:
+                      "tasa":
+                        type: number
+                        example: 6.16
+                  "Tasa Objetivo":
+                    type: object
+                    properties:
+                      "tasa":
+                        type: number
+                        example: 6.0
+                  "TIIE 28":
+                    type: object
+                    properties:
+                      "tasa":
+                        type: number
+                        example: 6.2375
+                  "tiempo":
+                    type: string
+                    example: "2021-12-16 3:10:00"
+        '401':
+          description: Errores en autenticación
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/NoAutorizado1'
+                  - $ref: '#/components/schemas/NoAutorizado2'
+                  - $ref: '#/components/schemas/NoAutorizado3'
+                  - $ref: '#/components/schemas/NoAutorizado4'
+                  - $ref: '#/components/schemas/NoAutorizado5'
+                  - $ref: '#/components/schemas/NoAutorizado6'
+
+  /divisas:
+    get:
+      tags:
+        - Divisas
+      summary: Consulta divisas
+      x-quota:
+        costo en creditos: 3
+      operationId: divisas
+      description: Último precio y cambio porcentual de los principales cruces de divisas.
+      security:
+        - token: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  "USDMXN":
+                    type: object
+                    properties:
+                      "precio":
+                        type: number
+                        example: 20.9404
+                      "cambio%":
+                        type: number
+                        example: 0.23
+                      "cambio$":
+                        type: number
+                        example: 0.0484
+                  "EURMXN":
+                    type: object
+                    properties:
+                      "precio":
+                        type: number
+                        example: 23.016
+                      "cambio%":
+                        type: number
+                        example: -0.53
+                      "cambio$":
+                        type: number
+                        example: -0.1219
+        '401':
+          description: Errores en autenticación
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/NoAutorizado1'
+                  - $ref: '#/components/schemas/NoAutorizado2'
+                  - $ref: '#/components/schemas/NoAutorizado3'
+                  - $ref: '#/components/schemas/NoAutorizado4'
+                  - $ref: '#/components/schemas/NoAutorizado5'
+                  - $ref: '#/components/schemas/NoAutorizado6'
+
+  /commodities:
+    get:
+      tags:
+        - Commodities
+      summary: Consulta commodities
+      x-quota:
+        costo en creditos: 10
+      operationId: commodities
+      description: EÚltimo precio, cambio monetario y porcentual de los principales commodities de hidrocarburos.
+      security:
+        - token: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  "hidrocarburos":
+                    type: object
+                    properties:
+                      "Gasoline":
+                        type: object
+                        properties:
+                          "ultimo":
+                            type: number
+                            example: 96.69
+                          "cambio%":
+                            type: number
+                            example: 0.27
+                          "cambio$":
+                            type: number
+                            example: 0.28
+                      "WTI Crude":
+                        type: object
+                        properties:
+                          "ultimo":
+                            type: number
+                            example: 3.465
+                          "cambio%":
+                            type: number
+                            example: 0.036
+                          "cambio$":
+                            type: number
+                            example: 1.04
+                      "Natural Gas":
+                        type: object
+                        properties:
+                          "ultimo":
+                            type: number
+                            example: 107.04
+                          "cambio%":
+                            type: number
+                            example: -0.1
+                          "cambio$":
+                            type: number
+                            example: -0.09
+                      "Opec Basket":
+                        type: object
+                        properties:
+                          "ultimo":
+                            type: number
+                            example: 108.11
+                          "cambio%":
+                            type: number
+                            example: -1.24
+                          "cambio$":
+                            type: number
+                            example: 1.13
+                      "Mexican Basket":
+                        type: object
+                        properties:
+                          "ultimo":
+                            type: number
+                            example: 95.55
+                          "cambio%":
+                            type: number
+                            example: 1.94
+                          "cambio$":
+                            type: number
+                            example: 2.07
+        '401':
+          description: Errores en autenticación
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/NoAutorizado1'
+                  - $ref: '#/components/schemas/NoAutorizado2'
+                  - $ref: '#/components/schemas/NoAutorizado3'
+                  - $ref: '#/components/schemas/NoAutorizado4'
+                  - $ref: '#/components/schemas/NoAutorizado5'
+                  - $ref: '#/components/schemas/NoAutorizado6'
+
+  /noticias:
+    get:
+      tags:
+        - Noticias
+      summary: Consulta noticias
+      x-quota:
+        costo en creditos: 50
+      operationId: noticias
+      description: Principales titulares de negocios y economía.
+      security:
+        - token: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  "0":
+                    type: object
+                    properties:
+                      "titular":
+                        type: string
+                        example: "Inflación EUA escala a 7.9% anual en febrero --mayor en 40 años-- por presiones gasolinas"
+                      "contenido":
+                        type: string
+                        example: "La inflación en Estados Unidos alcanzó niveles no vistos en 40 años..."
+                      "fuente":
+                        type: string
+                        example: "https://www.axisnegocios.com/articulo.phtml?id=105912"
+                  "1":
+                    type: object
+                    properties:
+                      "titular":
+                        type: string
+                        example: "BCE perfila adelantar fin de compras de activos pese a incertidumbre por guerra"
+                      "contenido":
+                        type: string
+                        example: "El Consejo de Gobierno del Banco Central Europeo sorprendió a los analistas..."
+                      "fuente":
+                        type: string
+                        example: "https://www.axisnegocios.com/articulo.phtml?id=105910"
+                  "2":
+                    type: object
+                    properties:
+                      "titular":
+                        type: string
+                        example: "Putin pensó que Ucrania caería rápido. Batalla en un aeropuerto probó lo contrario"
+                      "contenido":
+                        type: string
+                        example: "El fuego de las ametralladoras atravesó a Anatoliy Kharchenko..."
+                      "fuente":
+                        type: string
+                        example: "https://www.axisnegocios.com/articulo.phtml?id=105925"
+                  "3":
+                    type: object
+                    properties:
+                      "titular":
+                        type: string
+                        example: "Inflación tiene su peor febrero en 20 años, sube presión hawkish para Banco de México"
+                      "contenido":
+                        type: string
+                        example: "La inflación en México frenó en febrero varios meses de desaceleración..."
+                      "fuente":
+                        type: string
+                        example: "https://www.axisnegocios.com/articulo.phtml?id=105867"
+
+        '401':
+          description: Errores en autenticación
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/NoAutorizado1'
+                  - $ref: '#/components/schemas/NoAutorizado2'
+                  - $ref: '#/components/schemas/NoAutorizado3'
+                  - $ref: '#/components/schemas/NoAutorizado4'
+                  - $ref: '#/components/schemas/NoAutorizado5'
+                  - $ref: '#/components/schemas/NoAutorizado6'
+
+  /creditos:
+    get:
+      tags:
+        - Creditos
+      summary: Consulta creditos disponibles
+      x-quota:
+        costo en creditos: 1
+      operationId: creditos
+      description: Créditos disponibles del token ingresado.
+      security:
+        - token: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  "Disponibles":
+                    type: number
+                    example: 250000
+
+        '401':
+          description: Errores en autenticación
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/NoAutorizado1'
+                  - $ref: '#/components/schemas/NoAutorizado2'
+                  - $ref: '#/components/schemas/NoAutorizado3'
+                  - $ref: '#/components/schemas/NoAutorizado4'
+                  - $ref: '#/components/schemas/NoAutorizado5'
+                  - $ref: '#/components/schemas/NoAutorizado6'
+
+
+components:
+  x-quota:
+    type: object
+    properties:
+      costo en creditos:
+        type: integer
+        description: Cantidad de créditos necesarios para acceder a la API.
+    required:
+      - costo en creditos
+  securitySchemes:
+    token:
+      type: apiKey
+      name: token
+      in: query
+  parameters:
+    token:
+      name: token
+      in: query
+      description: Token de autenticación
+      required: true
+      schema:
+        type: string
+  schemas:
+    NoAutorizado1:
+      type: object
+      properties:
+        token:
+          type: string
+          description: Ocurre cuándo el parámetro token no ha sido ingresado.
+          example: "Es necesario ingresar el parámetro '&token=' y un token válido para ejecutar la consulta. ¿Dudas? Revisa la documentación: https://databursatil.com/docs.html#auth"
+    NoAutorizado2:
+      type: object
+      properties:
+        token:
+          type: string
+          description: Ocurre cuándo el valor del token no ha sido ingresado, está vacío o no tiene la longitud esperada.
+          example: "Longitud del token no válida. ¿Dudas? Revisa la documentación: https://databursatil.com/docs.html#auth"
+    NoAutorizado3:
+      type: object
+      properties:
+        token:
+          type: string
+          description: Ocurre cuándo el token no está registrado en la base de datos.
+          example: "Token no registrado. Crea una cuenta y accede a tu token: https://databursatil.com/nuevo_usuario.php"
+    NoAutorizado4:
+      type: object
+      properties:
+        token:
+          type: string
+          description: Ocurre cuándo el token registrado ha sido desactivado por el usuario desde su dashboard.
+          example: "Token desactivado. Actívalo desde tu Dashboard: https://databursatil.com/dashboard.php"
+    NoAutorizado5:
+      type: object
+      properties:
+        token:
+          type: string
+          description: Ocurre cuándo el token registrado ha sido suspendido por DataBursatil por uso incorrecto.
+          example: "Token suspendido. Dudas o aclaraciones: hola@databursatil.com"
+    NoAutorizado6:
+      type: object
+      properties:
+        token:
+          type: string
+          description: Ocurre cuándo el usuario ha gastado todos sus créditos mensuales para uso de la API.
+          example: "Créditos insuficientes. Opcionalmente, puedes incrementarlos desde: https://databursatil.com/incrementar_creditos.php"

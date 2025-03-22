@@ -1,0 +1,402 @@
+{
+  "0": {
+    "AM": {
+      "0": {
+        "Serie": "N",
+        "Razon Social": "DASSAULT AVIATION SA",
+        "ISIN": "FR0014004L86",
+        "Bolsa": "EURONEXT PARIS",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 83487030,
+        "Rango Historicos": "2017/02/17 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "1": {
+    "AMAT": {
+      "0": {
+        "Serie": "*",
+        "Razon Social": "APPLIED MATERIALS, INC.",
+        "ISIN": "US0382221051",
+        "Bolsa": "NASDAQ",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 1066487000,
+        "Rango Historicos": "2010/01/05 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "2": {
+    "AMBA": {
+      "0": {
+        "Serie": "N",
+        "Razon Social": "AMBARELLA, INC.",
+        "ISIN": "KYG037AX1015",
+        "Bolsa": "NASDAQ",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 33635000,
+        "Rango Historicos": "2018/05/07 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "3": {
+    "AMBU": {
+      "0": {
+        "Serie": "N",
+        "Razon Social": "AMBU A/S ",
+        "ISIN": "DK0060946788",
+        "Bolsa": "NASDAQ COPENHAGEN",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "SUSPENDIDA",
+        "Acciones en Circulacion": 217679600,
+        "Rango Historicos": "2020/03/02 - 2024/10/14",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "4": {
+    "AMC": {
+      "0": {
+        "Serie": "*",
+        "Razon Social": "AMC ENTERTAINMENT HOLDINGS, INC.",
+        "ISIN": "US00165C3025",
+        "Bolsa": "NEW YORK STOCK EXCHANGE",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 104242287,
+        "Rango Historicos": "2020/04/27 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "5": {
+    "AMCR": {
+      "0": {
+        "Serie": "N",
+        "Razon Social": "AMCOR PLC",
+        "ISIN": "JE00BJ1F3079",
+        "Bolsa": "NEW YORK STOCK EXCHANGE",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "SUSPENDIDA",
+        "Acciones en Circulacion": 1625907855,
+        "Rango Historicos": "2019/10/01 - 2024/10/14",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "6": {
+    "AMD": {
+      "0": {
+        "Serie": "*",
+        "Razon Social": "ADVANCED MICRO DEVICES INC.",
+        "ISIN": "US0079031078",
+        "Bolsa": "NASDAQ",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 926868716,
+        "Rango Historicos": "2010/01/05 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "7": {
+    "AME": {
+      "0": {
+        "Serie": "*",
+        "Razon Social": "AMETEK, INC.",
+        "ISIN": "US0311001004",
+        "Bolsa": "NEW YORK STOCK EXCHANGE",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 232115972,
+        "Rango Historicos": "2018/12/28 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "8": {
+    "AMED": {
+      "0": {
+        "Serie": "*",
+        "Razon Social": "AMEDISYS, INC.",
+        "ISIN": "US0234361089",
+        "Bolsa": "NASDAQ",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 32010292,
+        "Rango Historicos": "2019/05/08 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "9": {
+    "AMGN": {
+      "0": {
+        "Serie": "*",
+        "Razon Social": "AMGEN INC.",
+        "ISIN": "US0311621009",
+        "Bolsa": "NASDAQ",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 743922473,
+        "Rango Historicos": "2010/01/05 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "10": {
+    "AMGOLD": {
+      "0": {
+        "Serie": "N",
+        "Razon Social": "AMUNDI PHYSICAL GOLD ETC",
+        "ISIN": "FR0013416716",
+        "Bolsa": "LONDON STOCK EXCHANGE",
+        "Tipo Valor Descripcion": "CANASTA DE ACCIONES (TRAC'S EXTRANJEROS)",
+        "Tipo Valor ID": "1I",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 56607811,
+        "Rango Historicos": "2023/02/01 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "11": {
+    "AMH": {
+      "0": {
+        "Serie": "*",
+        "Razon Social": "AMERICAN HOMES 4 RENT",
+        "ISIN": "US02665T3068",
+        "Bolsa": "NEW YORK STOCK EXCHANGE",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 348259270,
+        "Rango Historicos": "2022/05/03 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "12": {
+    "AML": {
+      "0": {
+        "Serie": "N",
+        "Razon Social": "ASTON MARTIN LAGONDA GLOBAL HOLDINGS PLC",
+        "ISIN": "GB00BN7CG237",
+        "Bolsa": "LONDON STOCK EXCHANGE",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "SUSPENDIDA",
+        "Acciones en Circulacion": 698757075,
+        "Rango Historicos": "2022/08/24 - 2025/01/27",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "13": {
+    "AMLP": {
+      "0": {
+        "Serie": "*",
+        "Razon Social": "ALERIAN MLP ETF",
+        "ISIN": "US00162Q4525",
+        "Bolsa": "NEW YORK STOCK EXCHANGE",
+        "Tipo Valor Descripcion": "CANASTA DE ACCIONES (TRAC'S EXTRANJEROS)",
+        "Tipo Valor ID": "1I",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 164982420,
+        "Rango Historicos": "2020/03/11 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "14": {
+    "AMN": {
+      "0": {
+        "Serie": "*",
+        "Razon Social": "AMN HEALTHCARE SERVICES, INC.",
+        "ISIN": "US0017441017",
+        "Bolsa": "NEW YORK STOCK EXCHANGE",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 47275009,
+        "Rango Historicos": "2021/11/12 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "15": {
+    "AMP": {
+      "0": {
+        "Serie": "*",
+        "Razon Social": "AMERIPRISE FINANCIAL, INC.",
+        "ISIN": "US03076C1062",
+        "Bolsa": "NEW YORK STOCK EXCHANGE",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 149943197,
+        "Rango Historicos": "2017/10/19 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "16": {
+    "AMP1": {
+      "0": {
+        "Serie": "N",
+        "Razon Social": "AMPLIFON S.P.A.",
+        "ISIN": "IT0004056880",
+        "Bolsa": "BORSA ITALIANA",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 226388620,
+        "Rango Historicos": "2023/11/06 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "17": {
+    "AMRC": {
+      "0": {
+        "Serie": "*",
+        "Razon Social": "AMERESCO, INC.",
+        "ISIN": "US02361E1082",
+        "Bolsa": "NEW YORK STOCK EXCHANGE",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "SUSPENDIDA",
+        "Acciones en Circulacion": 51270425,
+        "Rango Historicos": "2021/06/28 - 2025/02/24",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "18": {
+    "AMRS": {
+      "0": {
+        "Serie": "*",
+        "Razon Social": "AMYRIS, INC.",
+        "ISIN": "US03236M2008",
+        "Bolsa": "NASDAQ",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "SUSPENDIDA",
+        "Acciones en Circulacion": 295555034,
+        "Rango Historicos": "2021/06/29 - 2023/08/18",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "19": {
+    "AMS": {
+      "0": {
+        "Serie": "N",
+        "Razon Social": "AMADEUS IT GROUP,  S.A.",
+        "ISIN": "ES0109067019",
+        "Bolsa": "B Y M ESPAÑOLES",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 434028744,
+        "Rango Historicos": "2019/03/04 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "20": {
+    "AMS1": {
+      "0": {
+        "Serie": "N",
+        "Razon Social": "AMS-OSRAM AG",
+        "ISIN": "AT0000A18XM4",
+        "Bolsa": "SIX SWISS EXCHANGE",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "SUSPENDIDA",
+        "Acciones en Circulacion": 274289280,
+        "Rango Historicos": "2022/01/05 - 2024/10/14",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "21": {
+    "AMSC": {
+      "0": {
+        "Serie": "*",
+        "Razon Social": "AMERICAN SUPERCONDUCTOR CORPORATION",
+        "ISIN": "US0301112076",
+        "Bolsa": "NASDAQ",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 27581625,
+        "Rango Historicos": "2021/04/05 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "22": {
+    "AMT": {
+      "0": {
+        "Serie": "*",
+        "Razon Social": "AMERICAN TOWER CORPORATION",
+        "ISIN": "US03027X1000",
+        "Bolsa": "NEW YORK STOCK EXCHANGE",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 425742565,
+        "Rango Historicos": "2015/11/27 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  },
+  "23": {
+    "AMTM": {
+      "0": {
+        "Serie": "*",
+        "Razon Social": "AMENTUM HOLDINGS, INC.",
+        "ISIN": "US0239391016",
+        "Bolsa": "XNYS - NEW YORK STOCK EXCHANGE, INC.",
+        "Tipo Valor Descripcion": "SIC Acciones",
+        "Tipo Valor ID": null,
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": null,
+        "Rango Historicos": null,
+        "Rango Financieros": null
+      }
+    }
+  },
+  "24": {
+    "AMZN": {
+      "0": {
+        "Serie": "*",
+        "Razon Social": "AMAZON. COM INC",
+        "ISIN": "US0231351067",
+        "Bolsa": "NASDAQ",
+        "Tipo Valor Descripcion": "ACCIONES DEL SISTEMA INTERNACIONAL DE COTIZACIONES",
+        "Tipo Valor ID": "1A",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 508720481,
+        "Rango Historicos": "2010/01/05 - 2025/03/21",
+        "Rango Financieros": null
+      }
+    }
+  }
+}

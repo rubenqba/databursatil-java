@@ -1,0 +1,55 @@
+
+{
+  "0": {
+    "AMX": {
+      "0": {
+        "Serie": "A",
+        "Razon Social": "AMERICA MOVIL, S.A.B. DE C.V.",
+        "ISIN": "MXP001691015",
+        "Bolsa": "BMV",
+        "Tipo Valor Descripcion": "ACCIONES DE EMPRESAS COMERCIALES, INDUSTRIALES Y DE SERVICIOS",
+        "Tipo Valor ID": "1",
+        "Estatus": "SUSPENDIDA",
+        "Acciones en Circulacion": 493337486,
+        "Rango Historicos": "2010/01/05 - 2023/03/16",
+        "Rango Financieros": "1T_2017, 1T_2018, 1T_2019, 1T_2020, 1T_2021, 1T_2022, 1T_2023, 1T_2024, 2T_2016, 2T_2017, 2T_2018, 2T_2019, 2T_2020, 2T_2021, 2T_2022, 2T_2023, 2T_2024, 3T_2016, 3T_2017, 3T_2018, 3T_2019, 3T_2020, 3T_2021, 3T_2022, 3T_2023, 3T_2024, 4T_2016, 4T_2017, 4T_2018, 4T_2019, 4T_2020, 4T_2021, 4T_2022, 4T_2023, 4T_2024"
+      },
+      "1": {
+        "Serie": "AA",
+        "Razon Social": "AMERICA MOVIL, S.A.B. DE C.V.",
+        "ISIN": null,
+        "Bolsa": "BMV",
+        "Tipo Valor Descripcion": "ACCIONES DE EMPRESAS COMERCIALES, INDUSTRIALES Y DE SERVICIOS",
+        "Tipo Valor ID": "1",
+        "Estatus": "SUSPENDIDA",
+        "Acciones en Circulacion": 20554697460,
+        "Rango Historicos": "2010/01/05 - 2012/08/30",
+        "Rango Financieros": "1T_2017, 1T_2018, 1T_2019, 1T_2020, 1T_2021, 1T_2022, 1T_2023, 1T_2024, 2T_2016, 2T_2017, 2T_2018, 2T_2019, 2T_2020, 2T_2021, 2T_2022, 2T_2023, 2T_2024, 3T_2016, 3T_2017, 3T_2018, 3T_2019, 3T_2020, 3T_2021, 3T_2022, 3T_2023, 3T_2024, 4T_2016, 4T_2017, 4T_2018, 4T_2019, 4T_2020, 4T_2021, 4T_2022, 4T_2023, 4T_2024"
+      },
+      "2": {
+        "Serie": "B",
+        "Razon Social": "AMERICA MOVIL, S.A.B. DE C.V.",
+        "ISIN": "MX01AM050019",
+        "Bolsa": "BMV",
+        "Tipo Valor Descripcion": "ACCIONES DE EMPRESAS COMERCIALES, INDUSTRIALES Y DE SERVICIOS",
+        "Tipo Valor ID": "1",
+        "Estatus": "ACTIVA",
+        "Acciones en Circulacion": 63232000000,
+        "Rango Historicos": "2010/01/05 - 2025/03/21",
+        "Rango Financieros": "1T_2017, 1T_2018, 1T_2019, 1T_2020, 1T_2021, 1T_2022, 1T_2023, 1T_2024, 2T_2016, 2T_2017, 2T_2018, 2T_2019, 2T_2020, 2T_2021, 2T_2022, 2T_2023, 2T_2024, 3T_2016, 3T_2017, 3T_2018, 3T_2019, 3T_2020, 3T_2021, 3T_2022, 3T_2023, 3T_2024, 4T_2016, 4T_2017, 4T_2018, 4T_2019, 4T_2020, 4T_2021, 4T_2022, 4T_2023, 4T_2024"
+      },
+      "3": {
+        "Serie": "L",
+        "Razon Social": "AMERICA MOVIL, S.A.B. DE C.V.",
+        "ISIN": "MXP001691213",
+        "Bolsa": "BMV",
+        "Tipo Valor Descripcion": "ACCIONES DE EMPRESAS COMERCIALES, INDUSTRIALES Y DE SERVICIOS",
+        "Tipo Valor ID": "1",
+        "Estatus": "SUSPENDIDA",
+        "Acciones en Circulacion": 42769965054,
+        "Rango Historicos": "2010/01/05 - 2024/07/15",
+        "Rango Financieros": "1T_2017, 1T_2018, 1T_2019, 1T_2020, 1T_2021, 1T_2022, 1T_2023, 1T_2024, 2T_2016, 2T_2017, 2T_2018, 2T_2019, 2T_2020, 2T_2021, 2T_2022, 2T_2023, 2T_2024, 3T_2016, 3T_2017, 3T_2018, 3T_2019, 3T_2020, 3T_2021, 3T_2022, 3T_2023, 3T_2024, 4T_2016, 4T_2017, 4T_2018, 4T_2019, 4T_2020, 4T_2021, 4T_2022, 4T_2023, 4T_2024"
+      }
+    }
+  }
+}
