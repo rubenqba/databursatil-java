@@ -45,7 +45,7 @@ class SearchStockMarketServiceTest {
                 .satisfies(list -> {
                     assertThat(list).isNotEmpty();
                     assertThat(list).anySatisfy(issuer -> {
-                        assertThat(issuer.ticker()).isEqualTo("AMZN");
+                        assertThat(issuer.code()).isEqualTo("AMZN");
                         assertThat(issuer.series()).hasSize(1);
                         assertThat(issuer.series().getFirst().series()).isEqualTo("*");
                     });
@@ -75,7 +75,7 @@ class SearchStockMarketServiceTest {
                 .satisfies(list -> {
                     assertThat(list).hasSize(1);
                     final var issuer = list.getFirst();
-                    assertThat(issuer.ticker()).isEqualTo("AMX");
+                    assertThat(issuer.code()).isEqualTo("AMX");
                     assertThat(issuer.series())
                             .hasSize(4)
                             .satisfiesOnlyOnce(series -> assertThat(series.status()).isEqualTo("ACTIVA"));

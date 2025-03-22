@@ -1,4 +1,4 @@
-package com.github.rubenqba.databursatil.models;
+package com.github.rubenqba.databursatil.models.api;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 

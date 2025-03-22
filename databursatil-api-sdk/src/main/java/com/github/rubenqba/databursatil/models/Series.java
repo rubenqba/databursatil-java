@@ -38,10 +38,8 @@ public record Series(
         @JsonDeserialize(using = FinancialPeriodsDeserializer.class)
         List<String> financialPeriods
 ) {
-//    public static Series parseFromJson(JsonNode node) {
-//        Series series = new ObjectMapper().convertValue(node, Series.class);
-//        series.financialPeriods = node.has("Rango Financieros") ?
-//                Arrays.asList(node.get("Rango Financieros").asText().split(", ")) : Collections.emptyList();
-//        return series;
-//    }
+
+        public String getTicker(String code) {
+                return code + series;
+        }
 }

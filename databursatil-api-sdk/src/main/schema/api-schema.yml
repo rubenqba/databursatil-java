@@ -592,7 +592,7 @@ paths:
             default: BMV,BIVA
         - name: concepto
           in: query
-          description: Concepto que se desea obtener. Significando "U" es "ultimo", "P" es "ppp, "A" es "anterior", "X" es "maximo", "N" es "minimo", "C" es "cambio po rciento", "M" es "cambio en pesos", "V" es "volumen operado", "O" es "operaciones", "I" es "importe acumulado"
+          description: Concepto que se desea obtener. Significando "U" es "ultimo", "P" es "volumeWeightedAveragePrice, "A" es "anterior", "X" es "maximo", "N" es "minimo", "C" es "cambio po rciento", "M" es "cambio en pesos", "V" es "volumen operado", "O" es "operaciones", "I" es "importe acumulado"
           required: true
           schema:
             type: string

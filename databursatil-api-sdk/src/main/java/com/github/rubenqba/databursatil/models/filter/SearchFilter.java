@@ -1,5 +1,7 @@
 package com.github.rubenqba.databursatil.models.filter;
 
+import com.github.rubenqba.databursatil.models.MarketScope;
+
 import java.util.EnumSet;
 
 public record SearchFilter(String query, EnumSet<MarketScope> scopes) {

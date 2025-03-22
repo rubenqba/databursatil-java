@@ -1,7 +1,7 @@
 package com.github.rubenqba.databursatil.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.rubenqba.databursatil.models.ErrorResponse;
+import com.github.rubenqba.databursatil.models.api.ErrorResponse;
 import com.github.rubenqba.databursatil.models.error.ApiException;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.client.ClientHttpResponse;
