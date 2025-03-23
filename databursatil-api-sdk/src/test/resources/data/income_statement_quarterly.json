@@ -1,0 +1,116 @@
+{
+  "Revenue": [
+    "Ingresos",
+    3403942000
+  ],
+  "ProfitLoss": [
+    "Utilidad (pérdida) neta",
+    859278000
+  ],
+  "CostOfSales": [
+    "Costo de ventas",
+    2077150000
+  ],
+  "GrossProfit": [
+    "Utilidad bruta",
+    1326792000
+  ],
+  "OtherIncome": [
+    "Otros ingresos",
+    0
+  ],
+  "FinanceCosts": [
+    "Gastos financieros",
+    201757000
+  ],
+  "FinanceIncome": [
+    "Ingresos financieros",
+    168686000
+  ],
+  "DistributionCosts": [
+    "Gastos de venta",
+    0
+  ],
+  "ProfitLossAbstract": [
+    "Utilidad (pérdida)"
+  ],
+  "ProfitLossBeforeTax": [
+    "Utilidad (pérdida) antes de impuestos",
+    1173657000
+  ],
+  "AdministrativeExpense": [
+    "Gastos de administración",
+    90280000
+  ],
+  "OtherExpenseByFunction": [
+    "Otros gastos",
+    44156000
+  ],
+  "IncomeStatementAbstract": [
+    "Resultado de periodo"
+  ],
+  "EarningsPerShareAbstract": [
+    "Utilidad por acción"
+  ],
+  "BasicEarningsLossPerShare": [
+    "Utilidad (pérdida) básica por acción",
+    0.09
+  ],
+  "DilutedEarningsLossPerShare": [
+    "Utilidad (pérdida) básica por acción diluida",
+    0.09
+  ],
+  "BasicEarningsPerShareAbstract": [
+    "Utilidad por acción básica"
+  ],
+  "DilutedEarningsPerShareAbstract": [
+    "Utilidad por acción diluida"
+  ],
+  "ProfitLossAttributableToAbstract": [
+    "Utilidad (pérdida), atribuible a"
+  ],
+  "ProfitLossFromOperatingActivities": [
+    "Utilidad (pérdida) de operación",
+    1192356000
+  ],
+  "ProfitLossFromContinuingOperations": [
+    "Utilidad (pérdida) de operaciones continuas",
+    859278000
+  ],
+  "IncomeTaxExpenseContinuingOperations": [
+    "Impuestos a la utilidad",
+    314379000
+  ],
+  "ProfitLossFromDiscontinuedOperations": [
+    "Utilidad (pérdida) de operaciones discontinuadas",
+    0
+  ],
+  "ProfitLossAttributableToOwnersOfParent": [
+    "Utilidad (pérdida) atribuible a la participación controladora",
+    733800000
+  ],
+  "ProfitLossAttributableToNoncontrollingInterests": [
+    "Utilidad (pérdida) atribuible a la participación no controladora",
+    125478000
+  ],
+  "BasicEarningsLossPerShareFromContinuingOperations": [
+    "Utilidad (pérdida) básica por acción en operaciones continuas",
+    0.09
+  ],
+  "BasicEarningsLossPerShareFromDiscontinuedOperations": [
+    "Utilidad (pérdida) básica por acción en operaciones discontinuadas",
+    0
+  ],
+  "DilutedEarningsLossPerShareFromContinuingOperations": [
+    "Utilidad (pérdida) básica por acción diluida en operaciones continuas",
+    0.09
+  ],
+  "DilutedEarningsLossPerShareFromDiscontinuedOperations": [
+    "Utilidad (pérdida) básica por acción diluida en operaciones discontinuadas",
+    0
+  ],
+  "ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod": [
+    "Participación en la utilidad (pérdida) de asociadas y negocios conjuntos",
+    14372000
+  ]
+}

@@ -1,11 +1,14 @@
 package com.github.rubenqba.databursatil;
 
+import com.github.rubenqba.databursatil.models.HistoricalPriceDetail;
 import com.github.rubenqba.databursatil.models.Issuer;
 import com.github.rubenqba.databursatil.models.Quote;
 import com.github.rubenqba.databursatil.models.StockExchange;
+import com.github.rubenqba.databursatil.models.api.HistoricalResponse;
 import com.github.rubenqba.databursatil.models.api.IssuersResponse;
 import com.github.rubenqba.databursatil.models.api.QuoteResponse;
 import com.github.rubenqba.databursatil.models.error.ApiException;
+import com.github.rubenqba.databursatil.models.filter.HistoricalFilter;
 import com.github.rubenqba.databursatil.models.filter.QuoteFilter;
 import com.github.rubenqba.databursatil.models.filter.SearchFilter;
 import org.slf4j.Logger;
@@ -82,5 +85,29 @@ public class StockMarketService {
         } catch (ApiException e) {
             return Collections.emptyList();
         }
+    }
+
+    public List<HistoricalPriceDetail> fetchHistoricalData(HistoricalFilter filter) {
+        Objects.requireNonNull(filter, "Filter cannot be null");
+        try {
+            final var body = client.get()
+                    .uri(builder -> {
+                        builder.path("/historicos")
+                                .queryParam("emisora_serie", filter.ticker())
+                                .queryParam("inicio", filter.from())
+                                .queryParam("final", filter.to());
+                        return builder.build();
+                    })
+                    .retrieve()
+                    .body(HistoricalResponse.class);
+
+            log.trace("Historical data: {}", body);
+            return Optional.ofNullable(body)
+                    .map(HistoricalResponse::prices)
+                    .orElseThrow(() -> new IllegalStateException("No data found"));
+        } catch (Exception e) {
+            log.error("Error fetching historical data", e);
+        }
+        return Collections.emptyList();
     }
 }

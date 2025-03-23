@@ -1,0 +1,1656 @@
+{
+  "posicion": {
+    "2023-12-31": {
+      "Assets": [
+        "Activos",
+        35141033000
+      ],
+      "Equity": [
+        "Capital contable",
+        21550819000
+      ],
+      "Goodwill": [
+        "Crédito mercantil",
+        3309190000
+      ],
+      "Inventories": [
+        "Inventarios",
+        1357402000
+      ],
+      "Liabilities": [
+        "Pasivos",
+        13590214000
+      ],
+      "SharePremium": [
+        "Prima en emisión de acciones",
+        9043000
+      ],
+      "CurrentAssets": [
+        "Activos circulantes",
+        10601479000
+      ],
+      "IssuedCapital": [
+        "Capital social",
+        2003496000
+      ],
+      "OtherReserves": [
+        "Otros resultados integrales acumulados",
+        104734000
+      ],
+      "AssetsAbstract": [
+        "Activos"
+      ],
+      "EquityAbstract": [
+        "Capital Contable"
+      ],
+      "TreasuryShares": [
+        "Acciones en tesorería",
+        2859429000
+      ],
+      "NoncurrentAssets": [
+        "Activos no circulantes",
+        24539554000
+      ],
+      "RetainedEarnings": [
+        "Utilidades acumuladas",
+        19654547000
+      ],
+      "CurrentProvisions": [
+        "Provisiones circulantes",
+        311686000
+      ],
+      "DeferredTaxAssets": [
+        "Activos por impuestos diferidos",
+        471592000
+      ],
+      "CurrentLiabilities": [
+        "Pasivos circulantes",
+        2170732000
+      ],
+      "InvestmentProperty": [
+        "Propiedades de inversión",
+        448211000
+      ],
+      "NoncurrentPayables": [
+        "Proveedores y otras cuentas por pagar a largo plazo",
+        0
+      ],
+      "LiabilitiesAbstract": [
+        "Pasivos"
+      ],
+      "EquityAndLiabilities": [
+        "Capital contable y pasivos",
+        35141033000
+      ],
+      "NoncurrentProvisions": [
+        "Provisiones a largo plazo",
+        1002844000
+      ],
+      "CurrentAssetsAbstract": [
+        "Activos circulantes"
+      ],
+      "NoncurrentInventories": [
+        "Inventarios no circulantes",
+        1190411000
+      ],
+      "NoncurrentLiabilities": [
+        "Pasivos a Largo plazo",
+        11419482000
+      ],
+      "NoncurrentReceivables": [
+        "Clientes y otras cuentas por cobrar no circulantes",
+        237332000
+      ],
+      "CashAndCashEquivalents": [
+        "Efectivo y equivalentes de efectivo",
+        4940404000
+      ],
+      "DeferredTaxLiabilities": [
+        "Pasivo por impuestos diferidos",
+        1566735000
+      ],
+      "CurrentBiologicalAssets": [
+        "Activos biológicos",
+        0
+      ],
+      "CurrentLeaseLiabilities": [
+        "Pasivos por arrendamientos a corto plazo",
+        113757000
+      ],
+      "CurrentTaxAssetsCurrent": [
+        "Impuestos por recuperar",
+        612166000
+      ],
+      "NoncontrollingInterests": [
+        "Participación no controladora",
+        2638428000
+      ],
+      "OtherLongtermProvisions": [
+        "Otras provisiones a largo plazo",
+        906193000
+      ],
+      "NoncurrentAssetsAbstract": [
+        "Activos no circulantes"
+      ],
+      "OtherShorttermProvisions": [
+        "Otras provisiones a corto plazo",
+        0
+      ],
+      "CurrentProvisionsAbstract": [
+        "Provisiones circulantes"
+      ],
+      "PropertyPlantAndEquipment": [
+        "Propiedades, planta y equipo",
+        18047025000
+      ],
+      "CurrentLiabilitiesAbstract": [
+        "Pasivos Circulantes"
+      ],
+      "CurrentTaxAssetsNoncurrent": [
+        "Impuestos por recuperar no circulantes",
+        0
+      ],
+      "NoncurrentBiologicalAssets": [
+        "Activos biológicos no circulantes",
+        0
+      ],
+      "NoncurrentLeaseLiabilities": [
+        "Pasivos por arrendamientos a largo plazo",
+        299348000
+      ],
+      "OtherCurrentFinancialAssets": [
+        "Otros activos financieros",
+        1705031000
+      ],
+      "CurrentTaxLiabilitiesCurrent": [
+        "Impuestos por pagar a corto plazo",
+        235173000
+      ],
+      "EquityAndLiabilitiesAbstract": [
+        "Capital Contable y Pasivos"
+      ],
+      "NoncurrentProvisionsAbstract": [
+        "Provisiones a largo plazo"
+      ],
+      "TradeAndOtherCurrentPayables": [
+        "Proveedores y otras cuentas por pagar a corto plazo",
+        1259945000
+      ],
+      "NoncurrentLiabilitiesAbstract": [
+        "Pasivos a largo plazo"
+      ],
+      "OtherCurrentNonfinancialAssets": [
+        "Otros activos no financieros",
+        0
+      ],
+      "OtherNoncurrentFinancialAssets": [
+        "Otros activos financieros no circulantes",
+        0
+      ],
+      "CurrentTaxLiabilitiesNoncurrent": [
+        "Impuestos por pagar a largo plazo",
+        0
+      ],
+      "TradeAndOtherCurrentReceivables": [
+        "Clientes y otras cuentas por cobrar",
+        1986476000
+      ],
+      "OtherCurrentFinancialLiabilities": [
+        "Otros pasivos financieros a corto plazo",
+        250171000
+      ],
+      "IntangibleAssetsOtherThanGoodwill": [
+        "Activos intangibles distintos al crédito mercantil",
+        124311000
+      ],
+      "OtherNoncurrentNonfinancialAssets": [
+        "Otros activos no financieros no circulantes",
+        0
+      ],
+      "EquityAttributableToOwnersOfParent": [
+        "Participación controladora",
+        18912391000
+      ],
+      "OtherCurrentNonfinancialLiabilities": [
+        "Otros pasivos no financieros a corto plazo",
+        0
+      ],
+      "OtherNoncurrentFinancialLiabilities": [
+        "Otros pasivos financieros a largo plazo",
+        8550555000
+      ],
+      "CurrentProvisionsForEmployeeBenefits": [
+        "Provisiones por beneficios a los empleados a corto plazo",
+        311686000
+      ],
+      "StatementOfFinancialPositionAbstract": [
+        "Estado de situación financiera"
+      ],
+      "OtherNoncurrentNonfinancialLiabilities": [
+        "Otros pasivos no financieros a largo plazo",
+        0
+      ],
+      "InvestmentAccountedForUsingEquityMethod": [
+        "Inversiones registradas por método de participación",
+        0
+      ],
+      "NoncurrentProvisionsForEmployeeBenefits": [
+        "Provisiones por beneficios a los empleados a Largo plazo",
+        96651000
+      ],
+      "InvestmentsInSubsidiariesJointVenturesAndAssociates": [
+        "Inversiones en subsidiarias, negocios conjuntos y asociadas",
+        227527000
+      ],
+      "LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale": [
+        "Pasivos atribuibles a activos mantenidos para la venta",
+        0
+      ],
+      "RightofuseAssetsThatDoNotMeetDefinitionOfInvestmentProperty": [
+        "Activos por derechos de uso",
+        483955000
+      ],
+      "CurrentLiabilitiesOtherThanLiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale": [
+        "Pasivos circulantes distintos de los pasivos atribuibles a activos mantenidos para la venta",
+        2170732000
+      ],
+      "NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners": [
+        "Activos mantenidos para la venta",
+        0
+      ],
+      "CurrentAssetsOtherThanAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners": [
+        "Activos circulantes distintos de los activos no circulantes o grupo de activos para su disposición clasificados como mantenidos para la venta",
+        10601479000
+      ]
+    },
+    "2024-12-31": {
+      "Assets": [
+        "Activos",
+        37038218000
+      ],
+      "Equity": [
+        "Capital contable",
+        23123465000
+      ],
+      "Goodwill": [
+        "Crédito mercantil",
+        3472789000
+      ],
+      "Inventories": [
+        "Inventarios",
+        1421129000
+      ],
+      "Liabilities": [
+        "Pasivos",
+        13914753000
+      ],
+      "SharePremium": [
+        "Prima en emisión de acciones",
+        9043000
+      ],
+      "CurrentAssets": [
+        "Activos circulantes",
+        12304767000
+      ],
+      "IssuedCapital": [
+        "Capital social",
+        2003496000
+      ],
+      "OtherReserves": [
+        "Otros resultados integrales acumulados",
+        -502109000
+      ],
+      "AssetsAbstract": [
+        "Activos"
+      ],
+      "EquityAbstract": [
+        "Capital Contable"
+      ],
+      "TreasuryShares": [
+        "Acciones en tesorería",
+        2460824000
+      ],
+      "NoncurrentAssets": [
+        "Activos no circulantes",
+        24733451000
+      ],
+      "RetainedEarnings": [
+        "Utilidades acumuladas",
+        21403211000
+      ],
+      "CurrentProvisions": [
+        "Provisiones circulantes",
+        332092000
+      ],
+      "DeferredTaxAssets": [
+        "Activos por impuestos diferidos",
+        339186000
+      ],
+      "CurrentLiabilities": [
+        "Pasivos circulantes",
+        3049708000
+      ],
+      "InvestmentProperty": [
+        "Propiedades de inversión",
+        575343000
+      ],
+      "NoncurrentPayables": [
+        "Proveedores y otras cuentas por pagar a largo plazo",
+        0
+      ],
+      "LiabilitiesAbstract": [
+        "Pasivos"
+      ],
+      "EquityAndLiabilities": [
+        "Capital contable y pasivos",
+        37038218000
+      ],
+      "NoncurrentProvisions": [
+        "Provisiones a largo plazo",
+        911232000
+      ],
+      "CurrentAssetsAbstract": [
+        "Activos circulantes"
+      ],
+      "NoncurrentInventories": [
+        "Inventarios no circulantes",
+        1133966000
+      ],
+      "NoncurrentLiabilities": [
+        "Pasivos a Largo plazo",
+        10865045000
+      ],
+      "NoncurrentReceivables": [
+        "Clientes y otras cuentas por cobrar no circulantes",
+        273395000
+      ],
+      "CashAndCashEquivalents": [
+        "Efectivo y equivalentes de efectivo",
+        7575708000
+      ],
+      "DeferredTaxLiabilities": [
+        "Pasivo por impuestos diferidos",
+        1703395000
+      ],
+      "CurrentBiologicalAssets": [
+        "Activos biológicos",
+        0
+      ],
+      "CurrentLeaseLiabilities": [
+        "Pasivos por arrendamientos a corto plazo",
+        149450000
+      ],
+      "CurrentTaxAssetsCurrent": [
+        "Impuestos por recuperar",
+        521745000
+      ],
+      "NoncontrollingInterests": [
+        "Participación no controladora",
+        2670648000
+      ],
+      "OtherLongtermProvisions": [
+        "Otras provisiones a largo plazo",
+        844882000
+      ],
+      "NoncurrentAssetsAbstract": [
+        "Activos no circulantes"
+      ],
+      "OtherShorttermProvisions": [
+        "Otras provisiones a corto plazo",
+        0
+      ],
+      "CurrentProvisionsAbstract": [
+        "Provisiones circulantes"
+      ],
+      "PropertyPlantAndEquipment": [
+        "Propiedades, planta y equipo",
+        17913444000
+      ],
+      "CurrentLiabilitiesAbstract": [
+        "Pasivos Circulantes"
+      ],
+      "CurrentTaxAssetsNoncurrent": [
+        "Impuestos por recuperar no circulantes",
+        0
+      ],
+      "NoncurrentBiologicalAssets": [
+        "Activos biológicos no circulantes",
+        0
+      ],
+      "NoncurrentLeaseLiabilities": [
+        "Pasivos por arrendamientos a largo plazo",
+        559146000
+      ],
+      "OtherCurrentFinancialAssets": [
+        "Otros activos financieros",
+        629055000
+      ],
+      "CurrentTaxLiabilitiesCurrent": [
+        "Impuestos por pagar a corto plazo",
+        502509000
+      ],
+      "EquityAndLiabilitiesAbstract": [
+        "Capital Contable y Pasivos"
+      ],
+      "NoncurrentProvisionsAbstract": [
+        "Provisiones a largo plazo"
+      ],
+      "TradeAndOtherCurrentPayables": [
+        "Proveedores y otras cuentas por pagar a corto plazo",
+        1308359000
+      ],
+      "NoncurrentLiabilitiesAbstract": [
+        "Pasivos a largo plazo"
+      ],
+      "OtherCurrentNonfinancialAssets": [
+        "Otros activos no financieros",
+        0
+      ],
+      "OtherNoncurrentFinancialAssets": [
+        "Otros activos financieros no circulantes",
+        0
+      ],
+      "CurrentTaxLiabilitiesNoncurrent": [
+        "Impuestos por pagar a largo plazo",
+        0
+      ],
+      "TradeAndOtherCurrentReceivables": [
+        "Clientes y otras cuentas por cobrar",
+        2157130000
+      ],
+      "OtherCurrentFinancialLiabilities": [
+        "Otros pasivos financieros a corto plazo",
+        757298000
+      ],
+      "IntangibleAssetsOtherThanGoodwill": [
+        "Activos intangibles distintos al crédito mercantil",
+        101945000
+      ],
+      "OtherNoncurrentNonfinancialAssets": [
+        "Otros activos no financieros no circulantes",
+        0
+      ],
+      "EquityAttributableToOwnersOfParent": [
+        "Participación controladora",
+        20452817000
+      ],
+      "OtherCurrentNonfinancialLiabilities": [
+        "Otros pasivos no financieros a corto plazo",
+        0
+      ],
+      "OtherNoncurrentFinancialLiabilities": [
+        "Otros pasivos financieros a largo plazo",
+        7691272000
+      ],
+      "CurrentProvisionsForEmployeeBenefits": [
+        "Provisiones por beneficios a los empleados a corto plazo",
+        332092000
+      ],
+      "StatementOfFinancialPositionAbstract": [
+        "Estado de situación financiera"
+      ],
+      "OtherNoncurrentNonfinancialLiabilities": [
+        "Otros pasivos no financieros a largo plazo",
+        0
+      ],
+      "InvestmentAccountedForUsingEquityMethod": [
+        "Inversiones registradas por método de participación",
+        0
+      ],
+      "NoncurrentProvisionsForEmployeeBenefits": [
+        "Provisiones por beneficios a los empleados a Largo plazo",
+        66350000
+      ],
+      "InvestmentsInSubsidiariesJointVenturesAndAssociates": [
+        "Inversiones en subsidiarias, negocios conjuntos y asociadas",
+        236638000
+      ],
+      "LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale": [
+        "Pasivos atribuibles a activos mantenidos para la venta",
+        0
+      ],
+      "RightofuseAssetsThatDoNotMeetDefinitionOfInvestmentProperty": [
+        "Activos por derechos de uso",
+        686745000
+      ],
+      "CurrentLiabilitiesOtherThanLiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale": [
+        "Pasivos circulantes distintos de los pasivos atribuibles a activos mantenidos para la venta",
+        3049708000
+      ],
+      "NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners": [
+        "Activos mantenidos para la venta",
+        0
+      ],
+      "CurrentAssetsOtherThanAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners": [
+        "Activos circulantes distintos de los activos no circulantes o grupo de activos para su disposición clasificados como mantenidos para la venta",
+        12304767000
+      ]
+    }
+  },
+  "resultado_trimestre": {
+    "2023-10-01_2023-12-31": {
+      "Revenue": [
+        "Ingresos",
+        3403942000
+      ],
+      "ProfitLoss": [
+        "Utilidad (pérdida) neta",
+        859278000
+      ],
+      "CostOfSales": [
+        "Costo de ventas",
+        2077150000
+      ],
+      "GrossProfit": [
+        "Utilidad bruta",
+        1326792000
+      ],
+      "OtherIncome": [
+        "Otros ingresos",
+        0
+      ],
+      "FinanceCosts": [
+        "Gastos financieros",
+        201757000
+      ],
+      "FinanceIncome": [
+        "Ingresos financieros",
+        168686000
+      ],
+      "DistributionCosts": [
+        "Gastos de venta",
+        0
+      ],
+      "ProfitLossAbstract": [
+        "Utilidad (pérdida)"
+      ],
+      "ProfitLossBeforeTax": [
+        "Utilidad (pérdida) antes de impuestos",
+        1173657000
+      ],
+      "AdministrativeExpense": [
+        "Gastos de administración",
+        90280000
+      ],
+      "OtherExpenseByFunction": [
+        "Otros gastos",
+        44156000
+      ],
+      "IncomeStatementAbstract": [
+        "Resultado de periodo"
+      ],
+      "EarningsPerShareAbstract": [
+        "Utilidad por acción"
+      ],
+      "BasicEarningsLossPerShare": [
+        "Utilidad (pérdida) básica por acción",
+        0.09
+      ],
+      "DilutedEarningsLossPerShare": [
+        "Utilidad (pérdida) básica por acción diluida",
+        0.09
+      ],
+      "BasicEarningsPerShareAbstract": [
+        "Utilidad por acción básica"
+      ],
+      "DilutedEarningsPerShareAbstract": [
+        "Utilidad por acción diluida"
+      ],
+      "ProfitLossAttributableToAbstract": [
+        "Utilidad (pérdida), atribuible a"
+      ],
+      "ProfitLossFromOperatingActivities": [
+        "Utilidad (pérdida) de operación",
+        1192356000
+      ],
+      "ProfitLossFromContinuingOperations": [
+        "Utilidad (pérdida) de operaciones continuas",
+        859278000
+      ],
+      "IncomeTaxExpenseContinuingOperations": [
+        "Impuestos a la utilidad",
+        314379000
+      ],
+      "ProfitLossFromDiscontinuedOperations": [
+        "Utilidad (pérdida) de operaciones discontinuadas",
+        0
+      ],
+      "ProfitLossAttributableToOwnersOfParent": [
+        "Utilidad (pérdida) atribuible a la participación controladora",
+        733800000
+      ],
+      "ProfitLossAttributableToNoncontrollingInterests": [
+        "Utilidad (pérdida) atribuible a la participación no controladora",
+        125478000
+      ],
+      "BasicEarningsLossPerShareFromContinuingOperations": [
+        "Utilidad (pérdida) básica por acción en operaciones continuas",
+        0.09
+      ],
+      "BasicEarningsLossPerShareFromDiscontinuedOperations": [
+        "Utilidad (pérdida) básica por acción en operaciones discontinuadas",
+        0
+      ],
+      "DilutedEarningsLossPerShareFromContinuingOperations": [
+        "Utilidad (pérdida) básica por acción diluida en operaciones continuas",
+        0.09
+      ],
+      "DilutedEarningsLossPerShareFromDiscontinuedOperations": [
+        "Utilidad (pérdida) básica por acción diluida en operaciones discontinuadas",
+        0
+      ],
+      "ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod": [
+        "Participación en la utilidad (pérdida) de asociadas y negocios conjuntos",
+        14372000
+      ]
+    },
+    "2024-10-01_2024-12-31": {
+      "Revenue": [
+        "Ingresos",
+        3847325000
+      ],
+      "ProfitLoss": [
+        "Utilidad (pérdida) neta",
+        827117000
+      ],
+      "CostOfSales": [
+        "Costo de ventas",
+        2173745000
+      ],
+      "GrossProfit": [
+        "Utilidad bruta",
+        1673580000
+      ],
+      "OtherIncome": [
+        "Otros ingresos",
+        0
+      ],
+      "FinanceCosts": [
+        "Gastos financieros",
+        203695000
+      ],
+      "FinanceIncome": [
+        "Ingresos financieros",
+        135771000
+      ],
+      "DistributionCosts": [
+        "Gastos de venta",
+        0
+      ],
+      "ProfitLossAbstract": [
+        "Utilidad (pérdida)"
+      ],
+      "ProfitLossBeforeTax": [
+        "Utilidad (pérdida) antes de impuestos",
+        1471688000
+      ],
+      "AdministrativeExpense": [
+        "Gastos de administración",
+        94419000
+      ],
+      "OtherExpenseByFunction": [
+        "Otros gastos",
+        42634000
+      ],
+      "IncomeStatementAbstract": [
+        "Resultado de periodo"
+      ],
+      "EarningsPerShareAbstract": [
+        "Utilidad por acción"
+      ],
+      "BasicEarningsLossPerShare": [
+        "Utilidad (pérdida) básica por acción",
+        0.09
+      ],
+      "DilutedEarningsLossPerShare": [
+        "Utilidad (pérdida) básica por acción diluida",
+        0.09
+      ],
+      "BasicEarningsPerShareAbstract": [
+        "Utilidad por acción básica"
+      ],
+      "DilutedEarningsPerShareAbstract": [
+        "Utilidad por acción diluida"
+      ],
+      "ProfitLossAttributableToAbstract": [
+        "Utilidad (pérdida), atribuible a"
+      ],
+      "ProfitLossFromOperatingActivities": [
+        "Utilidad (pérdida) de operación",
+        1536527000
+      ],
+      "ProfitLossFromContinuingOperations": [
+        "Utilidad (pérdida) de operaciones continuas",
+        827117000
+      ],
+      "IncomeTaxExpenseContinuingOperations": [
+        "Impuestos a la utilidad",
+        644571000
+      ],
+      "ProfitLossFromDiscontinuedOperations": [
+        "Utilidad (pérdida) de operaciones discontinuadas",
+        0
+      ],
+      "ProfitLossAttributableToOwnersOfParent": [
+        "Utilidad (pérdida) atribuible a la participación controladora",
+        686474000
+      ],
+      "ProfitLossAttributableToNoncontrollingInterests": [
+        "Utilidad (pérdida) atribuible a la participación no controladora",
+        140643000
+      ],
+      "BasicEarningsLossPerShareFromContinuingOperations": [
+        "Utilidad (pérdida) básica por acción en operaciones continuas",
+        0.09
+      ],
+      "BasicEarningsLossPerShareFromDiscontinuedOperations": [
+        "Utilidad (pérdida) básica por acción en operaciones discontinuadas",
+        0
+      ],
+      "DilutedEarningsLossPerShareFromContinuingOperations": [
+        "Utilidad (pérdida) básica por acción diluida en operaciones continuas",
+        0.09
+      ],
+      "DilutedEarningsLossPerShareFromDiscontinuedOperations": [
+        "Utilidad (pérdida) básica por acción diluida en operaciones discontinuadas",
+        0
+      ],
+      "ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod": [
+        "Participación en la utilidad (pérdida) de asociadas y negocios conjuntos",
+        3085000
+      ]
+    }
+  },
+  "resultado_acumulado": {
+    "2023-01-01_2023-12-31": {
+      "Revenue": [
+        "Ingresos",
+        14366895000
+      ],
+      "ProfitLoss": [
+        "Utilidad (pérdida) neta",
+        3979843000
+      ],
+      "CostOfSales": [
+        "Costo de ventas",
+        8170904000
+      ],
+      "GrossProfit": [
+        "Utilidad bruta",
+        6195991000
+      ],
+      "OtherIncome": [
+        "Otros ingresos",
+        0
+      ],
+      "FinanceCosts": [
+        "Gastos financieros",
+        757069000
+      ],
+      "FinanceIncome": [
+        "Ingresos financieros",
+        562990000
+      ],
+      "DistributionCosts": [
+        "Gastos de venta",
+        0
+      ],
+      "ProfitLossAbstract": [
+        "Utilidad (pérdida)"
+      ],
+      "ProfitLossBeforeTax": [
+        "Utilidad (pérdida) antes de impuestos",
+        5653096000
+      ],
+      "AdministrativeExpense": [
+        "Gastos de administración",
+        332742000
+      ],
+      "OtherExpenseByFunction": [
+        "Otros gastos",
+        33932000
+      ],
+      "IncomeStatementAbstract": [
+        "Resultado de periodo"
+      ],
+      "EarningsPerShareAbstract": [
+        "Utilidad por acción"
+      ],
+      "BasicEarningsLossPerShare": [
+        "Utilidad (pérdida) básica por acción",
+        0.43
+      ],
+      "DilutedEarningsLossPerShare": [
+        "Utilidad (pérdida) básica por acción diluida",
+        0.43
+      ],
+      "BasicEarningsPerShareAbstract": [
+        "Utilidad por acción básica"
+      ],
+      "DilutedEarningsPerShareAbstract": [
+        "Utilidad por acción diluida"
+      ],
+      "ProfitLossAttributableToAbstract": [
+        "Utilidad (pérdida), atribuible a"
+      ],
+      "ProfitLossFromOperatingActivities": [
+        "Utilidad (pérdida) de operación",
+        5829317000
+      ],
+      "ProfitLossFromContinuingOperations": [
+        "Utilidad (pérdida) de operaciones continuas",
+        3979843000
+      ],
+      "IncomeTaxExpenseContinuingOperations": [
+        "Impuestos a la utilidad",
+        1673253000
+      ],
+      "ProfitLossFromDiscontinuedOperations": [
+        "Utilidad (pérdida) de operaciones discontinuadas",
+        0
+      ],
+      "ProfitLossAttributableToOwnersOfParent": [
+        "Utilidad (pérdida) atribuible a la participación controladora",
+        3374631000
+      ],
+      "ProfitLossAttributableToNoncontrollingInterests": [
+        "Utilidad (pérdida) atribuible a la participación no controladora",
+        605212000
+      ],
+      "BasicEarningsLossPerShareFromContinuingOperations": [
+        "Utilidad (pérdida) básica por acción en operaciones continuas",
+        0.43
+      ],
+      "BasicEarningsLossPerShareFromDiscontinuedOperations": [
+        "Utilidad (pérdida) básica por acción en operaciones discontinuadas",
+        0
+      ],
+      "DilutedEarningsLossPerShareFromContinuingOperations": [
+        "Utilidad (pérdida) básica por acción diluida en operaciones continuas",
+        0.43
+      ],
+      "DilutedEarningsLossPerShareFromDiscontinuedOperations": [
+        "Utilidad (pérdida) básica por acción diluida en operaciones discontinuadas",
+        0
+      ],
+      "ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod": [
+        "Participación en la utilidad (pérdida) de asociadas y negocios conjuntos",
+        17858000
+      ]
+    },
+    "2024-01-01_2024-12-31": {
+      "Revenue": [
+        "Ingresos",
+        16169984000
+      ],
+      "ProfitLoss": [
+        "Utilidad (pérdida) neta",
+        4185708000
+      ],
+      "CostOfSales": [
+        "Costo de ventas",
+        8816048000
+      ],
+      "GrossProfit": [
+        "Utilidad bruta",
+        7353936000
+      ],
+      "OtherIncome": [
+        "Otros ingresos",
+        0
+      ],
+      "FinanceCosts": [
+        "Gastos financieros",
+        720990000
+      ],
+      "FinanceIncome": [
+        "Ingresos financieros",
+        508947000
+      ],
+      "DistributionCosts": [
+        "Gastos de venta",
+        0
+      ],
+      "ProfitLossAbstract": [
+        "Utilidad (pérdida)"
+      ],
+      "ProfitLossBeforeTax": [
+        "Utilidad (pérdida) antes de impuestos",
+        6810569000
+      ],
+      "AdministrativeExpense": [
+        "Gastos de administración",
+        344313000
+      ],
+      "OtherExpenseByFunction": [
+        "Otros gastos",
+        5789000
+      ],
+      "IncomeStatementAbstract": [
+        "Resultado de periodo"
+      ],
+      "EarningsPerShareAbstract": [
+        "Utilidad por acción"
+      ],
+      "BasicEarningsLossPerShare": [
+        "Utilidad (pérdida) básica por acción",
+        0.46
+      ],
+      "DilutedEarningsLossPerShare": [
+        "Utilidad (pérdida) básica por acción diluida",
+        0.46
+      ],
+      "BasicEarningsPerShareAbstract": [
+        "Utilidad por acción básica"
+      ],
+      "DilutedEarningsPerShareAbstract": [
+        "Utilidad por acción diluida"
+      ],
+      "ProfitLossAttributableToAbstract": [
+        "Utilidad (pérdida), atribuible a"
+      ],
+      "ProfitLossFromOperatingActivities": [
+        "Utilidad (pérdida) de operación",
+        7003834000
+      ],
+      "ProfitLossFromContinuingOperations": [
+        "Utilidad (pérdida) de operaciones continuas",
+        4185708000
+      ],
+      "IncomeTaxExpenseContinuingOperations": [
+        "Impuestos a la utilidad",
+        2624861000
+      ],
+      "ProfitLossFromDiscontinuedOperations": [
+        "Utilidad (pérdida) de operaciones discontinuadas",
+        0
+      ],
+      "ProfitLossAttributableToOwnersOfParent": [
+        "Utilidad (pérdida) atribuible a la participación controladora",
+        3557477000
+      ],
+      "ProfitLossAttributableToNoncontrollingInterests": [
+        "Utilidad (pérdida) atribuible a la participación no controladora",
+        628231000
+      ],
+      "BasicEarningsLossPerShareFromContinuingOperations": [
+        "Utilidad (pérdida) básica por acción en operaciones continuas",
+        0.46
+      ],
+      "BasicEarningsLossPerShareFromDiscontinuedOperations": [
+        "Utilidad (pérdida) básica por acción en operaciones discontinuadas",
+        0
+      ],
+      "DilutedEarningsLossPerShareFromContinuingOperations": [
+        "Utilidad (pérdida) básica por acción diluida en operaciones continuas",
+        0.46
+      ],
+      "DilutedEarningsLossPerShareFromDiscontinuedOperations": [
+        "Utilidad (pérdida) básica por acción diluida en operaciones discontinuadas",
+        0
+      ],
+      "ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod": [
+        "Participación en la utilidad (pérdida) de asociadas y negocios conjuntos",
+        18778000
+      ]
+    }
+  },
+  "flujos": {
+    "2023-01-01_2023-12-31": {
+      "ProfitLoss": [
+        "Utilidad (pérdida) neta",
+        3979843000
+      ],
+      "CashAndCashEquivalents": [
+        "Efectivo y equivalentes de efectivo al principio del periodo",
+        5773116000
+      ],
+      "OperacionesDiscontinuas": [
+        "Operaciones discontinuas",
+        0
+      ],
+      "AdjustmentsForProvisions": [
+        "Provisiones",
+        6016000
+      ],
+      "ProceedsFromIssuingShares": [
+        "Importes procedentes de la emisión de acciones",
+        0
+      ],
+      "AdjustmentsForFinanceCosts": [
+        "Ingresos y gastos financieros, neto",
+        0
+      ],
+      "StatementOfCashFlowsAbstract": [
+        "Estado de flujos de efectivo"
+      ],
+      "CashAndCashEquivalents_Ending": [
+        "Efectivo y equivalentes de efectivo al final del periodo",
+        4940404000
+      ],
+      "CashFlowsFromUsedInOperations": [
+        "Flujos de efectivo procedentes (utilizados en) operaciones",
+        7090093000
+      ],
+      "AdjustmentsForIncomeTaxExpense": [
+        "Impuestos a la utilidad",
+        1673253000
+      ],
+      "AjustePorValorDeLasPropiedades": [
+        "Ajuste por valor de las propiedades",
+        0
+      ],
+      "OtherAdjustmentsForNoncashItems": [
+        "Otras partidas distintas al efectivo",
+        0
+      ],
+      "AdjustmentsForSharebasedPayments": [
+        "Pagos basados en acciones",
+        0
+      ],
+      "PaymentsOfOtherEquityInstruments": [
+        "Pagos por otras aportaciones en el capital",
+        0
+      ],
+      "AdjustmentsForReconcileProfitLoss": [
+        "Ajustes para conciliar la utilidad (pérdida)",
+        3110250000
+      ],
+      "AdjustmentsForFairValueGainsLosses": [
+        "Pérdida (utilidad) del valor razonable",
+        0
+      ],
+      "OtherAdjustmentsToReconcileProfitLoss": [
+        "Otros ajustes para conciliar la utilidad (pérdida)",
+        0
+      ],
+      "CashFlowsFromUsedInFinancingActivities": [
+        "Flujos de efectivo procedentes de (utilizados en) actividades de financiamiento",
+        -3210152000
+      ],
+      "CashFlowsFromUsedInInvestingActivities": [
+        "Flujos de efectivo procedentes de (utilizados en) actividades de inversión",
+        -3016635000
+      ],
+      "CashFlowsFromUsedInOperatingActivities": [
+        "Flujos de efectivo procedentes de (utilizados en) actividades de operación",
+        5481204000
+      ],
+      "PaymentsToAcquireOrRedeemEntitysShares": [
+        "Pagos por adquirir o rescatar las acciones de la entidad",
+        42549000
+      ],
+      "AjusteLinealDeIngresosPorArrendamientos": [
+        "Ajuste lineal de ingresos por arrendamientos",
+        0
+      ],
+      "AmortizacionDeComisionesPorArrendamiento": [
+        "Amortización de comisiones por arrendamiento",
+        0
+      ],
+      "IncreaseDecreaseInCashAndCashEquivalents": [
+        "Incremento (disminución) de efectivo y equivalentes de efectivo",
+        -832712000
+      ],
+      "AdjustmentsForReconcileProfitLossAbstract": [
+        "Ajustes para conciliar la utilidad (pérdida)"
+      ],
+      "ProceedsFromIssuingOtherEquityInstruments": [
+        "Importes procedentes de la emisión de otros instrumentos de capital",
+        0
+      ],
+      "ParticipacionEnAsociadasYNegociosConjuntos": [
+        "Participación en asociadas y negocios conjuntos",
+        -17858000
+      ],
+      "AdjustmentsForDecreaseIncreaseInInventories": [
+        "Disminuciones (incrementos) en los inventarios",
+        -74530000
+      ],
+      "InterestPaidClassifiedAsFinancingActivities": [
+        "Intereses pagados",
+        562144000
+      ],
+      "InterestPaidClassifiedAsInvestingActivities": [
+        "Intereses pagados",
+        0
+      ],
+      "InterestPaidClassifiedAsOperatingActivities": [
+        "Intereses pagados",
+        -562144000
+      ],
+      "DividendsPaidClassifiedAsFinancingActivities": [
+        "Dividendos pagados",
+        2282241000
+      ],
+      "DividendsPaidClassifiedAsOperatingActivities": [
+        "Dividendos pagados",
+        0
+      ],
+      "AdjustmentsForUndistributedProfitsOfAssociates": [
+        "Utilidades no distribuidas de asociadas",
+        0
+      ],
+      "CashFlowsFromUsedInFinancingActivitiesAbstract": [
+        "Flujos de efectivo procedentes de (utilizados en) actividades de financiamiento"
+      ],
+      "CashFlowsFromUsedInInvestingActivitiesAbstract": [
+        "Flujos de efectivo procedentes de (utilizados en) actividades de inversión"
+      ],
+      "CashFlowsFromUsedInOperatingActivitiesAbstract": [
+        "Flujos de efectivo procedentes de (utilizados en) actividades de operación"
+      ],
+      "InterestReceivedClassifiedAsInvestingActivities": [
+        "Intereses cobrados",
+        334624000
+      ],
+      "InterestReceivedClassifiedAsOperatingActivities": [
+        "Intereses recibidos",
+        -334624000
+      ],
+      "AdjustmentsForDepreciationAndAmortisationExpense": [
+        "Gastos de depreciación y amortización",
+        1255856000
+      ],
+      "DividendsReceivedClassifiedAsInvestingActivities": [
+        "Dividendos recibidos",
+        0
+      ],
+      "DividendsReceivedClassifiedAsOperatingActivities": [
+        "Dividendos recibidos",
+        0
+      ],
+      "AdjustmentsForUnrealisedForeignExchangeLossesGains": [
+        "Pérdida (utilidad) de moneda extranjera no realizadas",
+        -12678000
+      ],
+      "AdjustmentsForIncreaseDecreaseInTradeAccountPayable": [
+        "Incremento (disminución) de proveedores",
+        8301000
+      ],
+      "EffectOfExchangeRateChangesOnCashAndCashEquivalents": [
+        "Efectos de la variación en la tasa de cambio sobre el efectivo y equivalentes al efectivo",
+        -87129000
+      ],
+      "IncomeTaxesPaidRefundClassifiedAsFinancingActivities": [
+        "Impuestos a las ganancias reembolsados (pagados)",
+        0
+      ],
+      "IncomeTaxesPaidRefundClassifiedAsInvestingActivities": [
+        "Impuestos a la utilidad reembolsados (pagados)",
+        0
+      ],
+      "IncomeTaxesPaidRefundClassifiedAsOperatingActivities": [
+        "Impuestos a las utilidades reembolsados (pagados)",
+        1836409000
+      ],
+      "AdjustmentsForLossesGainsOnDisposalOfNoncurrentAssets": [
+        "Pérdida (utilidad) por la disposición de activos no circulantes",
+        81775000
+      ],
+      "PaymentsFromChangesInOwnershipInterestsInSubsidiaries": [
+        "Pagos por cambios en las participaciones en la propiedad en subsidiarias que no dan lugar a la pérdida de control",
+        0
+      ],
+      "ProceedsFromBorrowingsClassifiedAsFinancingActivities": [
+        "Importes procedentes de préstamos",
+        27548000
+      ],
+      "ProceedsFromChangesInOwnershipInterestsInSubsidiaries": [
+        "Importes procedentes por cambios en las participaciones en la propiedad en subsidiarias que no dan lugar a la pérdida de control",
+        0
+      ],
+      "RepaymentsOfBorrowingsClassifiedAsFinancingActivities": [
+        "Reembolsos de préstamos",
+        190263000
+      ],
+      "AdjustmentsForDecreaseIncreaseInTradeAccountReceivable": [
+        "Disminución (incremento) de clientes",
+        216431000
+      ],
+      "AdjustmentsForIncreaseDecreaseInOtherOperatingPayables": [
+        "Incrementos (disminuciones) en otras cuentas por pagar derivadas de las actividades de operación",
+        598474000
+      ],
+      "AdjustmentsForDecreaseIncreaseInOtherOperatingReceivables": [
+        "Disminuciones (incrementos) en otras cuentas por cobrar derivadas de las actividades de operación",
+        -624790000
+      ],
+      "OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities": [
+        "Otras entradas (salidas) de efectivo",
+        0
+      ],
+      "OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities": [
+        "Otras entradas (salidas) de efectivo",
+        -248206000
+      ],
+      "OtherInflowsOutflowsOfCashClassifiedAsOperatingActivities": [
+        "Otras entradas (salidas) de efectivo",
+        0
+      ],
+      "PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities": [
+        "Pagos de pasivos por arrendamientos",
+        160503000
+      ],
+      "PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities": [
+        "Compras de activos intangibles",
+        0
+      ],
+      "EffectOfExchangeRateChangesOnCashAndCashEquivalentsAbstract": [
+        "Efectos de la variación en la tasa de cambio sobre el efectivo y equivalentes al efectivo"
+      ],
+      "ProceedsFromGovernmentGrantsClassifiedAsFinancingActivities": [
+        "Importes procedentes de subvenciones del gobierno",
+        0
+      ],
+      "ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities": [
+        "Importes procedentes de subvenciones del gobierno",
+        0
+      ],
+      "PurchaseOfOtherLongtermAssetsClassifiedAsInvestingActivities": [
+        "Compras de otros activos a largo plazo",
+        0
+      ],
+      "ProceedsFromOtherLongtermAssetsClassifiedAsInvestingActivities": [
+        "Recursos por ventas de otros activos a largo plazo",
+        0
+      ],
+      "PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities": [
+        "Pagos de pasivos por arrendamientos financieros",
+        0
+      ],
+      "OtherAdjustmentsForWhichCashEffectsAreInvestingOrFinancingCashFlow": [
+        "Otros ajustes para los que los efectos sobre el efectivo son flujos de efectivo de inversión o financiamiento",
+        0
+      ],
+      "ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities": [
+        "Importes procedentes de ventas de activos intangibles",
+        0
+      ],
+      "PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities": [
+        "Compras de propiedades, planta y equipo",
+        1660832000
+      ],
+      "CashAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities": [
+        "Anticipos de efectivo y préstamos concedidos a terceros",
+        0
+      ],
+      "IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges": [
+        "Incremento (disminución) de efectivo y equivalentes al efectivo, antes del efecto de los cambios en la tasa de cambio",
+        -745583000
+      ],
+      "ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities": [
+        "Importes procedentes de la venta de propiedades, planta y equipo",
+        1220000
+      ],
+      "AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss": [
+        "Deterioro de valor (reversiones de pérdidas por deterioro de valor) reconocidas en el resultado del periodo",
+        0
+      ],
+      "OtherCashPaymentsToAcquireInterestsInJointVenturesClassifiedAsInvestingActivities": [
+        "Otros pagos para adquirir participaciones en negocios conjuntos",
+        0
+      ],
+      "OtherCashReceiptsFromSalesOfInterestsInJointVenturesClassifiedAsInvestingActivities": [
+        "Otros cobros por la venta de participaciones en negocios conjuntos",
+        0
+      ],
+      "CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities": [
+        "Flujos de efectivo procedentes de la pérdida de control de subsidiarias u otros negocios",
+        418898000
+      ],
+      "CashReceiptsFromRepaymentOfAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities": [
+        "Cobros procedentes del reembolso de anticipos y préstamos concedidos a terceros",
+        0
+      ],
+      "CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities": [
+        "Flujos de efectivo utilizados para obtener el control de subsidiarias u otros negocios",
+        1862339000
+      ],
+      "OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities": [
+        "Otros pagos para adquirir capital o instrumentos de deuda de otras entidades",
+        0
+      ],
+      "OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities": [
+        "Otros cobros por la venta de capital o instrumentos de deuda de otras entidades",
+        0
+      ],
+      "CashPaymentsForFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities": [
+        "Pagos derivados de contratos de futuro, a término, de opciones y de permuta financiera",
+        0
+      ],
+      "CashReceiptsFromFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities": [
+        "Cobros procedentes de contratos de futuro, a término, de opciones y de permuta financiera",
+        0
+      ]
+    },
+    "2024-01-01_2024-12-31": {
+      "ProfitLoss": [
+        "Utilidad (pérdida) neta",
+        4185708000
+      ],
+      "CashAndCashEquivalents": [
+        "Efectivo y equivalentes de efectivo al principio del periodo",
+        4940404000
+      ],
+      "OperacionesDiscontinuas": [
+        "Operaciones discontinuas",
+        0
+      ],
+      "AdjustmentsForProvisions": [
+        "Provisiones",
+        -30301000
+      ],
+      "ProceedsFromIssuingShares": [
+        "Importes procedentes de la emisión de acciones",
+        0
+      ],
+      "AdjustmentsForFinanceCosts": [
+        "Ingresos y gastos financieros, neto",
+        0
+      ],
+      "StatementOfCashFlowsAbstract": [
+        "Estado de flujos de efectivo"
+      ],
+      "CashAndCashEquivalents_Ending": [
+        "Efectivo y equivalentes de efectivo al final del periodo",
+        7575708000
+      ],
+      "CashFlowsFromUsedInOperations": [
+        "Flujos de efectivo procedentes (utilizados en) operaciones",
+        7621396000
+      ],
+      "AdjustmentsForIncomeTaxExpense": [
+        "Impuestos a la utilidad",
+        2624861000
+      ],
+      "AjustePorValorDeLasPropiedades": [
+        "Ajuste por valor de las propiedades",
+        0
+      ],
+      "OtherAdjustmentsForNoncashItems": [
+        "Otras partidas distintas al efectivo",
+        0
+      ],
+      "AdjustmentsForSharebasedPayments": [
+        "Pagos basados en acciones",
+        0
+      ],
+      "PaymentsOfOtherEquityInstruments": [
+        "Pagos por otras aportaciones en el capital",
+        0
+      ],
+      "AdjustmentsForReconcileProfitLoss": [
+        "Ajustes para conciliar la utilidad (pérdida)",
+        3435688000
+      ],
+      "AdjustmentsForFairValueGainsLosses": [
+        "Pérdida (utilidad) del valor razonable",
+        0
+      ],
+      "OtherAdjustmentsToReconcileProfitLoss": [
+        "Otros ajustes para conciliar la utilidad (pérdida)",
+        0
+      ],
+      "CashFlowsFromUsedInFinancingActivities": [
+        "Flujos de efectivo procedentes de (utilizados en) actividades de financiamiento",
+        -2687048000
+      ],
+      "CashFlowsFromUsedInInvestingActivities": [
+        "Flujos de efectivo procedentes de (utilizados en) actividades de inversión",
+        -1100218000
+      ],
+      "CashFlowsFromUsedInOperatingActivities": [
+        "Flujos de efectivo procedentes de (utilizados en) actividades de operación",
+        6522880000
+      ],
+      "PaymentsToAcquireOrRedeemEntitysShares": [
+        "Pagos por adquirir o rescatar las acciones de la entidad",
+        -202809000
+      ],
+      "AjusteLinealDeIngresosPorArrendamientos": [
+        "Ajuste lineal de ingresos por arrendamientos",
+        0
+      ],
+      "AmortizacionDeComisionesPorArrendamiento": [
+        "Amortización de comisiones por arrendamiento",
+        0
+      ],
+      "IncreaseDecreaseInCashAndCashEquivalents": [
+        "Incremento (disminución) de efectivo y equivalentes de efectivo",
+        2635304000
+      ],
+      "AdjustmentsForReconcileProfitLossAbstract": [
+        "Ajustes para conciliar la utilidad (pérdida)"
+      ],
+      "ProceedsFromIssuingOtherEquityInstruments": [
+        "Importes procedentes de la emisión de otros instrumentos de capital",
+        0
+      ],
+      "ParticipacionEnAsociadasYNegociosConjuntos": [
+        "Participación en asociadas y negocios conjuntos",
+        -18778000
+      ],
+      "AdjustmentsForDecreaseIncreaseInInventories": [
+        "Disminuciones (incrementos) en los inventarios",
+        -12649000
+      ],
+      "InterestPaidClassifiedAsFinancingActivities": [
+        "Intereses pagados",
+        575510000
+      ],
+      "InterestPaidClassifiedAsInvestingActivities": [
+        "Intereses pagados",
+        0
+      ],
+      "InterestPaidClassifiedAsOperatingActivities": [
+        "Intereses pagados",
+        -575510000
+      ],
+      "DividendsPaidClassifiedAsFinancingActivities": [
+        "Dividendos pagados",
+        2223555000
+      ],
+      "DividendsPaidClassifiedAsOperatingActivities": [
+        "Dividendos pagados",
+        0
+      ],
+      "AdjustmentsForUndistributedProfitsOfAssociates": [
+        "Utilidades no distribuidas de asociadas",
+        0
+      ],
+      "CashFlowsFromUsedInFinancingActivitiesAbstract": [
+        "Flujos de efectivo procedentes de (utilizados en) actividades de financiamiento"
+      ],
+      "CashFlowsFromUsedInInvestingActivitiesAbstract": [
+        "Flujos de efectivo procedentes de (utilizados en) actividades de inversión"
+      ],
+      "CashFlowsFromUsedInOperatingActivitiesAbstract": [
+        "Flujos de efectivo procedentes de (utilizados en) actividades de operación"
+      ],
+      "InterestReceivedClassifiedAsInvestingActivities": [
+        "Intereses cobrados",
+        -414433000
+      ],
+      "InterestReceivedClassifiedAsOperatingActivities": [
+        "Intereses recibidos",
+        414433000
+      ],
+      "AdjustmentsForDepreciationAndAmortisationExpense": [
+        "Gastos de depreciación y amortización",
+        1311336000
+      ],
+      "DividendsReceivedClassifiedAsInvestingActivities": [
+        "Dividendos recibidos",
+        0
+      ],
+      "DividendsReceivedClassifiedAsOperatingActivities": [
+        "Dividendos recibidos",
+        0
+      ],
+      "AdjustmentsForUnrealisedForeignExchangeLossesGains": [
+        "Pérdida (utilidad) de moneda extranjera no realizadas",
+        -226886000
+      ],
+      "AdjustmentsForIncreaseDecreaseInTradeAccountPayable": [
+        "Incremento (disminución) de proveedores",
+        51363000
+      ],
+      "EffectOfExchangeRateChangesOnCashAndCashEquivalents": [
+        "Efectos de la variación en la tasa de cambio sobre el efectivo y equivalentes al efectivo",
+        -100310000
+      ],
+      "IncomeTaxesPaidRefundClassifiedAsFinancingActivities": [
+        "Impuestos a las ganancias reembolsados (pagados)",
+        0
+      ],
+      "IncomeTaxesPaidRefundClassifiedAsInvestingActivities": [
+        "Impuestos a la utilidad reembolsados (pagados)",
+        0
+      ],
+      "IncomeTaxesPaidRefundClassifiedAsOperatingActivities": [
+        "Impuestos a las utilidades reembolsados (pagados)",
+        2088459000
+      ],
+      "AdjustmentsForLossesGainsOnDisposalOfNoncurrentAssets": [
+        "Pérdida (utilidad) por la disposición de activos no circulantes",
+        29393000
+      ],
+      "PaymentsFromChangesInOwnershipInterestsInSubsidiaries": [
+        "Pagos por cambios en las participaciones en la propiedad en subsidiarias que no dan lugar a la pérdida de control",
+        0
+      ],
+      "ProceedsFromBorrowingsClassifiedAsFinancingActivities": [
+        "Importes procedentes de préstamos",
+        295917000
+      ],
+      "ProceedsFromChangesInOwnershipInterestsInSubsidiaries": [
+        "Importes procedentes por cambios en las participaciones en la propiedad en subsidiarias que no dan lugar a la pérdida de control",
+        0
+      ],
+      "RepaymentsOfBorrowingsClassifiedAsFinancingActivities": [
+        "Reembolsos de préstamos",
+        386709000
+      ],
+      "AdjustmentsForDecreaseIncreaseInTradeAccountReceivable": [
+        "Disminución (incremento) de clientes",
+        -117487000
+      ],
+      "AdjustmentsForIncreaseDecreaseInOtherOperatingPayables": [
+        "Incrementos (disminuciones) en otras cuentas por pagar derivadas de las actividades de operación",
+        -44042000
+      ],
+      "AdjustmentsForDecreaseIncreaseInOtherOperatingReceivables": [
+        "Disminuciones (incrementos) en otras cuentas por cobrar derivadas de las actividades de operación",
+        -131122000
+      ],
+      "OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities": [
+        "Otras entradas (salidas) de efectivo",
+        0
+      ],
+      "OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities": [
+        "Otras entradas (salidas) de efectivo",
+        0
+      ],
+      "OtherInflowsOutflowsOfCashClassifiedAsOperatingActivities": [
+        "Otras entradas (salidas) de efectivo",
+        0
+      ],
+      "PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities": [
+        "Pagos de pasivos por arrendamientos",
+        0
+      ],
+      "PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities": [
+        "Compras de activos intangibles",
+        0
+      ],
+      "EffectOfExchangeRateChangesOnCashAndCashEquivalentsAbstract": [
+        "Efectos de la variación en la tasa de cambio sobre el efectivo y equivalentes al efectivo"
+      ],
+      "ProceedsFromGovernmentGrantsClassifiedAsFinancingActivities": [
+        "Importes procedentes de subvenciones del gobierno",
+        0
+      ],
+      "ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities": [
+        "Importes procedentes de subvenciones del gobierno",
+        0
+      ],
+      "PurchaseOfOtherLongtermAssetsClassifiedAsInvestingActivities": [
+        "Compras de otros activos a largo plazo",
+        0
+      ],
+      "ProceedsFromOtherLongtermAssetsClassifiedAsInvestingActivities": [
+        "Recursos por ventas de otros activos a largo plazo",
+        0
+      ],
+      "PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities": [
+        "Pagos de pasivos por arrendamientos financieros",
+        0
+      ],
+      "OtherAdjustmentsForWhichCashEffectsAreInvestingOrFinancingCashFlow": [
+        "Otros ajustes para los que los efectos sobre el efectivo son flujos de efectivo de inversión o financiamiento",
+        0
+      ],
+      "ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities": [
+        "Importes procedentes de ventas de activos intangibles",
+        0
+      ],
+      "PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities": [
+        "Compras de propiedades, planta y equipo",
+        1761588000
+      ],
+      "CashAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities": [
+        "Anticipos de efectivo y préstamos concedidos a terceros",
+        0
+      ],
+      "IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges": [
+        "Incremento (disminución) de efectivo y equivalentes al efectivo, antes del efecto de los cambios en la tasa de cambio",
+        2735614000
+      ],
+      "ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities": [
+        "Importes procedentes de la venta de propiedades, planta y equipo",
+        0
+      ],
+      "AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss": [
+        "Deterioro de valor (reversiones de pérdidas por deterioro de valor) reconocidas en el resultado del periodo",
+        0
+      ],
+      "OtherCashPaymentsToAcquireInterestsInJointVenturesClassifiedAsInvestingActivities": [
+        "Otros pagos para adquirir participaciones en negocios conjuntos",
+        0
+      ],
+      "OtherCashReceiptsFromSalesOfInterestsInJointVenturesClassifiedAsInvestingActivities": [
+        "Otros cobros por la venta de participaciones en negocios conjuntos",
+        0
+      ],
+      "CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities": [
+        "Flujos de efectivo procedentes de la pérdida de control de subsidiarias u otros negocios",
+        1687585000
+      ],
+      "CashReceiptsFromRepaymentOfAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities": [
+        "Cobros procedentes del reembolso de anticipos y préstamos concedidos a terceros",
+        0
+      ],
+      "CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities": [
+        "Flujos de efectivo utilizados para obtener el control de subsidiarias u otros negocios",
+        611782000
+      ],
+      "OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities": [
+        "Otros pagos para adquirir capital o instrumentos de deuda de otras entidades",
+        0
+      ],
+      "OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities": [
+        "Otros cobros por la venta de capital o instrumentos de deuda de otras entidades",
+        0
+      ],
+      "CashPaymentsForFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities": [
+        "Pagos derivados de contratos de futuro, a término, de opciones y de permuta financiera",
+        0
+      ],
+      "CashReceiptsFromFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities": [
+        "Cobros procedentes de contratos de futuro, a término, de opciones y de permuta financiera",
+        0
+      ]
+    }
+  }
+}

@@ -2,6 +2,7 @@ package com.github.rubenqba.databursatil;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.rubenqba.databursatil.models.QuoteDetails;
+import com.github.rubenqba.databursatil.models.api.HistoricalResponse;
 import com.github.rubenqba.databursatil.models.api.IssuersResponse;
 import org.junit.jupiter.api.Test;
 
@@ -89,6 +90,27 @@ public class DataMappingTest {
             assertThat(quote.percentageChange()).isEqualTo(new BigDecimal("1.03"));
             assertThat(quote.currencyChange()).isEqualTo(new BigDecimal("40.28"));
             assertThat(quote.timestamp()).isEqualTo(date);
+        } catch (Exception e) {
+            fail(e.getMessage());
+        }
+    }
+
+    @Test
+    void historicalPrices() {
+        try (final var is = new FileInputStream("src/test/resources/data/historical_prices.json")) {
+            final var data = mapper.readValue(is, HistoricalResponse.class);
+            assertThat(data.prices())
+                    .hasSizeGreaterThan(1)
+                    .allSatisfy(price -> {
+                        assertThat(price.date()).isNotNull();
+                        assertThat(price.closePrice()).isGreaterThan(BigDecimal.ZERO);
+                        assertThat(price.totalValue()).isGreaterThan(BigDecimal.ZERO);
+                    });
+
+            // verify that the prices are sorted by date
+            var previous = data.prices().getFirst().date();
+            var latest = data.prices().getLast().date();
+            assertThat(previous).isBeforeOrEqualTo(latest);
         } catch (Exception e) {
             fail(e.getMessage());
         }

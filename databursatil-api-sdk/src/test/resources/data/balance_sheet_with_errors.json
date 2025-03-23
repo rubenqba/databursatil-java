@@ -1,0 +1,263 @@
+{
+  "Assets": [
+    "Activos",
+    35145033000
+  ],
+  "Equity": [
+    "Capital contable",
+    21550819000
+  ],
+  "Goodwill": [
+    "Crédito mercantil",
+    3309190000
+  ],
+  "Inventories": [
+    "Inventarios",
+    1357402000
+  ],
+  "Liabilities": [
+    "Pasivos",
+    3590214000
+  ],
+  "SharePremium": [
+    "Prima en emisión de acciones",
+    9043000
+  ],
+  "CurrentAssets": [
+    "Activos circulantes",
+    10601479000
+  ],
+  "IssuedCapital": [
+    "Capital social",
+    2003496000
+  ],
+  "OtherReserves": [
+    "Otros resultados integrales acumulados",
+    104734000
+  ],
+  "AssetsAbstract": [
+    "Activos"
+  ],
+  "EquityAbstract": [
+    "Capital Contable"
+  ],
+  "TreasuryShares": [
+    "Acciones en tesorería",
+    2859429000
+  ],
+  "NoncurrentAssets": [
+    "Activos no circulantes",
+    24539554000
+  ],
+  "RetainedEarnings": [
+    "Utilidades acumuladas",
+    19654547000
+  ],
+  "CurrentProvisions": [
+    "Provisiones circulantes",
+    311686000
+  ],
+  "DeferredTaxAssets": [
+    "Activos por impuestos diferidos",
+    471592000
+  ],
+  "CurrentLiabilities": [
+    "Pasivos circulantes",
+    2170732000
+  ],
+  "InvestmentProperty": [
+    "Propiedades de inversión",
+    448211000
+  ],
+  "NoncurrentPayables": [
+    "Proveedores y otras cuentas por pagar a largo plazo",
+    0
+  ],
+  "LiabilitiesAbstract": [
+    "Pasivos"
+  ],
+  "EquityAndLiabilities": [
+    "Capital contable y pasivos",
+    35141033000
+  ],
+  "NoncurrentProvisions": [
+    "Provisiones a largo plazo",
+    1002844000
+  ],
+  "CurrentAssetsAbstract": [
+    "Activos circulantes"
+  ],
+  "NoncurrentInventories": [
+    "Inventarios no circulantes",
+    1190411000
+  ],
+  "NoncurrentLiabilities": [
+    "Pasivos a Largo plazo",
+    11419482000
+  ],
+  "NoncurrentReceivables": [
+    "Clientes y otras cuentas por cobrar no circulantes",
+    237332000
+  ],
+  "CashAndCashEquivalents": [
+    "Efectivo y equivalentes de efectivo",
+    4940404000
+  ],
+  "DeferredTaxLiabilities": [
+    "Pasivo por impuestos diferidos",
+    1566735000
+  ],
+  "CurrentBiologicalAssets": [
+    "Activos biológicos",
+    0
+  ],
+  "CurrentLeaseLiabilities": [
+    "Pasivos por arrendamientos a corto plazo",
+    113757000
+  ],
+  "CurrentTaxAssetsCurrent": [
+    "Impuestos por recuperar",
+    612166000
+  ],
+  "NoncontrollingInterests": [
+    "Participación no controladora",
+    5638428000
+  ],
+  "OtherLongtermProvisions": [
+    "Otras provisiones a largo plazo",
+    906193000
+  ],
+  "NoncurrentAssetsAbstract": [
+    "Activos no circulantes"
+  ],
+  "OtherShorttermProvisions": [
+    "Otras provisiones a corto plazo",
+    0
+  ],
+  "CurrentProvisionsAbstract": [
+    "Provisiones circulantes"
+  ],
+  "PropertyPlantAndEquipment": [
+    "Propiedades, planta y equipo",
+    18047025000
+  ],
+  "CurrentLiabilitiesAbstract": [
+    "Pasivos Circulantes"
+  ],
+  "CurrentTaxAssetsNoncurrent": [
+    "Impuestos por recuperar no circulantes",
+    0
+  ],
+  "NoncurrentBiologicalAssets": [
+    "Activos biológicos no circulantes",
+    0
+  ],
+  "NoncurrentLeaseLiabilities": [
+    "Pasivos por arrendamientos a largo plazo",
+    299348000
+  ],
+  "OtherCurrentFinancialAssets": [
+    "Otros activos financieros",
+    1705031000
+  ],
+  "CurrentTaxLiabilitiesCurrent": [
+    "Impuestos por pagar a corto plazo",
+    235173000
+  ],
+  "EquityAndLiabilitiesAbstract": [
+    "Capital Contable y Pasivos"
+  ],
+  "NoncurrentProvisionsAbstract": [
+    "Provisiones a largo plazo"
+  ],
+  "TradeAndOtherCurrentPayables": [
+    "Proveedores y otras cuentas por pagar a corto plazo",
+    1259945000
+  ],
+  "NoncurrentLiabilitiesAbstract": [
+    "Pasivos a largo plazo"
+  ],
+  "OtherCurrentNonfinancialAssets": [
+    "Otros activos no financieros",
+    0
+  ],
+  "OtherNoncurrentFinancialAssets": [
+    "Otros activos financieros no circulantes",
+    0
+  ],
+  "CurrentTaxLiabilitiesNoncurrent": [
+    "Impuestos por pagar a largo plazo",
+    0
+  ],
+  "TradeAndOtherCurrentReceivables": [
+    "Clientes y otras cuentas por cobrar",
+    1986476000
+  ],
+  "OtherCurrentFinancialLiabilities": [
+    "Otros pasivos financieros a corto plazo",
+    250171000
+  ],
+  "IntangibleAssetsOtherThanGoodwill": [
+    "Activos intangibles distintos al crédito mercantil",
+    124311000
+  ],
+  "OtherNoncurrentNonfinancialAssets": [
+    "Otros activos no financieros no circulantes",
+    0
+  ],
+  "EquityAttributableToOwnersOfParent": [
+    "Participación controladora",
+    18912391000
+  ],
+  "OtherCurrentNonfinancialLiabilities": [
+    "Otros pasivos no financieros a corto plazo",
+    0
+  ],
+  "OtherNoncurrentFinancialLiabilities": [
+    "Otros pasivos financieros a largo plazo",
+    8550555000
+  ],
+  "CurrentProvisionsForEmployeeBenefits": [
+    "Provisiones por beneficios a los empleados a corto plazo",
+    311686000
+  ],
+  "StatementOfFinancialPositionAbstract": [
+    "Estado de situación financiera"
+  ],
+  "OtherNoncurrentNonfinancialLiabilities": [
+    "Otros pasivos no financieros a largo plazo",
+    0
+  ],
+  "InvestmentAccountedForUsingEquityMethod": [
+    "Inversiones registradas por método de participación",
+    0
+  ],
+  "NoncurrentProvisionsForEmployeeBenefits": [
+    "Provisiones por beneficios a los empleados a Largo plazo",
+    96651000
+  ],
+  "InvestmentsInSubsidiariesJointVenturesAndAssociates": [
+    "Inversiones en subsidiarias, negocios conjuntos y asociadas",
+    227527000
+  ],
+  "LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale": [
+    "Pasivos atribuibles a activos mantenidos para la venta",
+    0
+  ],
+  "RightofuseAssetsThatDoNotMeetDefinitionOfInvestmentProperty": [
+    "Activos por derechos de uso",
+    483955000
+  ],
+  "CurrentLiabilitiesOtherThanLiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale": [
+    "Pasivos circulantes distintos de los pasivos atribuibles a activos mantenidos para la venta",
+    2170732000
+  ],
+  "NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners": [
+    "Activos mantenidos para la venta",
+    0
+  ],
+  "CurrentAssetsOtherThanAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners": [
+    "Activos circulantes distintos de los activos no circulantes o grupo de activos para su disposición clasificados como mantenidos para la venta",
+    10601479000
+  ]
+}
