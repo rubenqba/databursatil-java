@@ -19,7 +19,10 @@ public class CustomOffsetDateTimeDeserializer extends StdDeserializer<OffsetDate
 
     @Override
     public OffsetDateTime deserialize(JsonParser p, DeserializationContext context) throws IOException {
-        String dateTimeStr = p.getText();
+        return parse(p.getText());
+    }
+
+    public static OffsetDateTime parse(String dateTimeStr) {
         LocalDateTime localDateTime = LocalDateTime.parse(dateTimeStr, FORMATTER);
         ZonedDateTime zonedDateTime = localDateTime.atZone(ZONE_ID);
         return zonedDateTime.toOffsetDateTime();

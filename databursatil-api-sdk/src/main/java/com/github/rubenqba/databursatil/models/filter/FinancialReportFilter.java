@@ -15,7 +15,7 @@ public record FinancialReportFilter(String issuerCode, EnumSet<FinancialStatemen
         if (period == null || period.isBlank()) {
             throw new IllegalArgumentException("Period is required");
         }
-        if (period.matches("^[1-4]T_2\\d{3}$")) {
+        if (!period.matches("^[1-4]T_2\\d{3}$")) {
             throw new IllegalArgumentException("Period format is invalid. It should be like 1T_2021");
         }
     }
@@ -26,7 +26,7 @@ public record FinancialReportFilter(String issuerCode, EnumSet<FinancialStatemen
 
     public static final class Builder {
         private String issuerCode;
-        private final EnumSet<FinancialStatementType> include = EnumSet.noneOf(FinancialStatementType.class);
+        private EnumSet<FinancialStatementType> include = EnumSet.noneOf(FinancialStatementType.class);
         private String period;
 
         public Builder() {
@@ -54,6 +54,11 @@ public record FinancialReportFilter(String issuerCode, EnumSet<FinancialStatemen
 
         public Builder includeIncomeStatementYTD() {
             include.add(FinancialStatementType.INCOME_STATEMENT_YTD);
+            return this;
+        }
+
+        public Builder includeAllStatements() {
+            include = EnumSet.allOf(FinancialStatementType.class);
             return this;
         }
 

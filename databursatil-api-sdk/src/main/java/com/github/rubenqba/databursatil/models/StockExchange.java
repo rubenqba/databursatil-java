@@ -19,7 +19,7 @@ public enum StockExchange {
         return code;
     }
 
-    public String getName() {
+    public String getDescription() {
         return name;
     }
 }

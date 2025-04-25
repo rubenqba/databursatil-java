@@ -2,11 +2,14 @@ package com.github.rubenqba.databursatil;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.rubenqba.databursatil.models.QuoteDetails;
+import com.github.rubenqba.databursatil.models.api.BenchmarkIndexResponse;
+import com.github.rubenqba.databursatil.models.api.CommoditiesResponse;
 import com.github.rubenqba.databursatil.models.api.HistoricalResponse;
 import com.github.rubenqba.databursatil.models.api.IssuersResponse;
 import org.junit.jupiter.api.Test;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.time.LocalDateTime;
@@ -24,7 +27,7 @@ public class DataMappingTest {
         try (final var is = new FileInputStream("src/test/resources/data/emisoras_globales_am.json")) {
             final var data = mapper.readValue(is, IssuersResponse.class);
             assertThat(data.issuers()).hasSize(25);
-        } catch (Exception e) {
+        } catch (IOException e) {
             fail(e.getMessage());
         }
     }
@@ -65,7 +68,7 @@ public class DataMappingTest {
             assertThat(quote.trades()).isEqualTo(19576);
             assertThat(quote.totalValue()).isEqualTo(new BigDecimal("1544373864.25"));
             assertThat(quote.timestamp()).isEqualTo(date);
-        } catch (Exception e) {
+        } catch (IOException e) {
             fail(e.getMessage());
         }
 
@@ -90,7 +93,7 @@ public class DataMappingTest {
             assertThat(quote.percentageChange()).isEqualTo(new BigDecimal("1.03"));
             assertThat(quote.currencyChange()).isEqualTo(new BigDecimal("40.28"));
             assertThat(quote.timestamp()).isEqualTo(date);
-        } catch (Exception e) {
+        } catch (IOException e) {
             fail(e.getMessage());
         }
     }
@@ -111,7 +114,62 @@ public class DataMappingTest {
             var previous = data.prices().getFirst().date();
             var latest = data.prices().getLast().date();
             assertThat(previous).isBeforeOrEqualTo(latest);
-        } catch (Exception e) {
+        } catch (IOException e) {
+            fail(e.getMessage());
+        }
+    }
+
+    @Test
+    void benchmarkIndexes() {
+        try (final var is = new FileInputStream("src/test/resources/data/benchmark_indexes.json")) {
+            final var data = mapper.readValue(is, BenchmarkIndexResponse.class);
+            assertThat(data.indexes())
+                    .hasSizeGreaterThan(1)
+                    .allSatisfy(index -> {
+                        assertThat(index.code()).isNotBlank();
+                        assertThat(index.name()).isNotBlank();
+                        assertThat(index.lastPrice()).isGreaterThan(BigDecimal.ZERO);
+                        assertThat(index.openingPrice()).isGreaterThan(BigDecimal.ZERO);
+                        assertThat(index.highPrice()).isGreaterThan(BigDecimal.ZERO);
+                        assertThat(index.lowPrice()).isGreaterThan(BigDecimal.ZERO);
+                        assertThat(index.percentChange()).isNotNull();
+                        assertThat(index.absoluteChange()).isNotNull();
+                        assertThat(index.volume()).isGreaterThan(0);
+                        assertThat(index.percentChangeYTD()).isNotNull();
+                        assertThat(index.timestamp()).isNotNull();
+                    });
+        } catch (IOException e) {
+            fail(e.getMessage());
+        }
+    }
+
+    @Test
+    void commodities() {
+        try (final var is = new FileInputStream("src/test/resources/data/commodities.json")) {
+            final var data = mapper.readValue(is, CommoditiesResponse.class);
+            assertThat(data).isNotNull();
+            assertThat(data.groups())
+                    .describedAs("No groups loaded")
+                    .hasSize(7)
+                    .allSatisfy(group -> {
+                        assertThat(group.name()).isNotBlank();
+                        assertThat(group.commodities())
+                                .describedAs("No commodities in group")
+                                .isNotEmpty()
+                                .allSatisfy(commodity -> {
+                                    assertThat(commodity.code()).isNotBlank();
+                                    assertThat(commodity.unit()).isNotBlank();
+                                    assertThat(commodity.lastPrice()).isNotNull();
+                                    assertThat(commodity.absoluteChange()).isNotNull();
+                                    assertThat(commodity.percentChange()).isNotNull();
+                                    assertThat(commodity.weeklyChangePercent()).isNotNull();
+                                    assertThat(commodity.monthlyChangePercent()).isNotNull();
+                                    assertThat(commodity.annualChangePercent()).isNotNull();
+                                    assertThat(commodity.percentChangeYTD()).isNotNull();
+                                    assertThat(commodity.date()).isNotNull();
+                                });
+                    });
+        } catch (IOException e) {
             fail(e.getMessage());
         }
     }

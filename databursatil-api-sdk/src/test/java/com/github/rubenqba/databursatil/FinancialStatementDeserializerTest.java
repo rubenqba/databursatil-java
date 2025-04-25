@@ -1,9 +1,10 @@
 package com.github.rubenqba.databursatil;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.rubenqba.databursatil.models.BalanceSheetStatement;
-import com.github.rubenqba.databursatil.models.CashFlowStatement;
-import com.github.rubenqba.databursatil.models.IncomeStatement;
+import com.github.rubenqba.databursatil.models.BalanceSheetStatementDetail;
+import com.github.rubenqba.databursatil.models.CashFlowStatementDetail;
+import com.github.rubenqba.databursatil.models.IncomeStatementDetail;
+import com.github.rubenqba.databursatil.models.api.FinancialStatementResponse;
 import com.github.rubenqba.databursatil.models.error.BalanceSheetValidationException;
 import com.github.rubenqba.databursatil.models.error.CashFlowStatementValidationException;
 import com.github.rubenqba.databursatil.models.error.IncomeStatementValidationException;
@@ -22,7 +23,7 @@ public class FinancialStatementDeserializerTest {
     @Test
     void deserializeBalanceSheet() {
         try (var is = new FileInputStream("src/test/resources/data/balance_sheet.json")) {
-            BalanceSheetStatement balanceSheet = mapper.readValue(is, BalanceSheetStatement.class);
+            BalanceSheetStatementDetail balanceSheet = mapper.readValue(is, BalanceSheetStatementDetail.class);
             assertThat(balanceSheet).isNotNull();
 
             // validate every field using real data
@@ -67,7 +68,7 @@ public class FinancialStatementDeserializerTest {
     @Test
     void deserializeBalanceSheetWithErrors() {
         try (var is = new FileInputStream("src/test/resources/data/balance_sheet_with_errors.json")) {
-            BalanceSheetStatement balanceSheet = mapper.readValue(is, BalanceSheetStatement.class);
+            BalanceSheetStatementDetail balanceSheet = mapper.readValue(is, BalanceSheetStatementDetail.class);
             assertThat(balanceSheet).isNotNull();
 
             // validate exception is thrown with detailed errors
@@ -90,37 +91,37 @@ public class FinancialStatementDeserializerTest {
     @Test
     void deserializeIncomeStatement() {
         try (var is = new FileInputStream("src/test/resources/data/income_statement_quarterly.json")) {
-            IncomeStatement incomeStatement = mapper.readValue(is, IncomeStatement.class);
-            assertThat(incomeStatement).isNotNull();
+            IncomeStatementDetail incomeStatementDetail = mapper.readValue(is, IncomeStatementDetail.class);
+            assertThat(incomeStatementDetail).isNotNull();
 
-            assertThat(incomeStatement.revenue()).isEqualByComparingTo("3403942000");
-            assertThat(incomeStatement.costOfGoodsSold()).isEqualByComparingTo("2077150000");
-            assertThat(incomeStatement.grossProfit()).isEqualByComparingTo("1326792000");
+            assertThat(incomeStatementDetail.revenue()).isEqualByComparingTo("3403942000");
+            assertThat(incomeStatementDetail.costOfGoodsSold()).isEqualByComparingTo("2077150000");
+            assertThat(incomeStatementDetail.grossProfit()).isEqualByComparingTo("1326792000");
 
-            assertThat(incomeStatement.administrativeExpenses()).isEqualByComparingTo("90280000");
-            assertThat(incomeStatement.distributionExpenses()).isEqualByComparingTo("0");
-            assertThat(incomeStatement.otherOperatingExpenses()).isEqualByComparingTo("44156000");
+            assertThat(incomeStatementDetail.administrativeExpenses()).isEqualByComparingTo("90280000");
+            assertThat(incomeStatementDetail.distributionExpenses()).isEqualByComparingTo("0");
+            assertThat(incomeStatementDetail.otherOperatingExpenses()).isEqualByComparingTo("44156000");
 
-            assertThat(incomeStatement.financeIncome()).isEqualByComparingTo("168686000");
-            assertThat(incomeStatement.financeCosts()).isEqualByComparingTo("201757000");
+            assertThat(incomeStatementDetail.financeIncome()).isEqualByComparingTo("168686000");
+            assertThat(incomeStatementDetail.financeCosts()).isEqualByComparingTo("201757000");
 
-            assertThat(incomeStatement.profitBeforeTax()).isEqualByComparingTo("1173657000");
-            assertThat(incomeStatement.incomeTaxExpense()).isEqualByComparingTo("314379000");
-            assertThat(incomeStatement.netProfit()).isEqualByComparingTo("859278000");
+            assertThat(incomeStatementDetail.profitBeforeTax()).isEqualByComparingTo("1173657000");
+            assertThat(incomeStatementDetail.incomeTaxExpense()).isEqualByComparingTo("314379000");
+            assertThat(incomeStatementDetail.netProfit()).isEqualByComparingTo("859278000");
 
-            assertThat(incomeStatement.profitAttributableToParentOwners()).isEqualByComparingTo("733800000");
-            assertThat(incomeStatement.profitAttributableToNoncontrollingInterests()).isEqualByComparingTo("125478000");
+            assertThat(incomeStatementDetail.profitAttributableToParentOwners()).isEqualByComparingTo("733800000");
+            assertThat(incomeStatementDetail.profitAttributableToNoncontrollingInterests()).isEqualByComparingTo("125478000");
 
-            assertThat(incomeStatement.basicEarningsPerShare()).isEqualByComparingTo("0.09");
-            assertThat(incomeStatement.dilutedEarningsPerShare()).isEqualByComparingTo("0.09");
+            assertThat(incomeStatementDetail.basicEarningsPerShare()).isEqualByComparingTo("0.09");
+            assertThat(incomeStatementDetail.dilutedEarningsPerShare()).isEqualByComparingTo("0.09");
 
-            assertThat(incomeStatement.profitFromContinuingOperations()).isEqualByComparingTo("859278000");
-            assertThat(incomeStatement.profitFromDiscontinuedOperations()).isEqualByComparingTo("0");
+            assertThat(incomeStatementDetail.profitFromContinuingOperations()).isEqualByComparingTo("859278000");
+            assertThat(incomeStatementDetail.profitFromDiscontinuedOperations()).isEqualByComparingTo("0");
 
-            assertThat(incomeStatement.shareOfProfitFromAssociatesAndJointVentures()).isEqualByComparingTo("14372000");
+            assertThat(incomeStatementDetail.shareOfProfitFromAssociatesAndJointVentures()).isEqualByComparingTo("14372000");
 
             // Ejecutar validación acumulativa
-            assertThatCode(incomeStatement::validate).doesNotThrowAnyException();
+            assertThatCode(incomeStatementDetail::validate).doesNotThrowAnyException();
 
         } catch (IOException e) {
             fail(e.getMessage(), e);
@@ -130,7 +131,7 @@ public class FinancialStatementDeserializerTest {
     @Test
     void deserializeIncomeStatementWithErrors() {
         try (var is = new FileInputStream("src/test/resources/data/income_statement_ytd_with_errors.json")) {
-            IncomeStatement statement = mapper.readValue(is, IncomeStatement.class);
+            IncomeStatementDetail statement = mapper.readValue(is, IncomeStatementDetail.class);
             assertThat(statement).isNotNull();
 
             // validate exception is thrown
@@ -153,7 +154,7 @@ public class FinancialStatementDeserializerTest {
     @Test
     void deserializeCashFlowStatement() {
         try (var is = new FileInputStream("src/test/resources/data/cash_flow_statement.json")) {
-            CashFlowStatement statement = mapper.readValue(is, CashFlowStatement.class);
+            CashFlowStatementDetail statement = mapper.readValue(is, CashFlowStatementDetail.class);
             assertThat(statement).isNotNull();
 
             assertThat(statement.profitLoss()).isEqualByComparingTo("-912465000");
@@ -224,7 +225,7 @@ public class FinancialStatementDeserializerTest {
     @Test
     void deserializeCashFlowStatementWithErrors() {
         try (var is = new FileInputStream("src/test/resources/data/cash_flow_statement_with_errors.json")) {
-            CashFlowStatement cashFlow = mapper.readValue(is, CashFlowStatement.class);
+            CashFlowStatementDetail cashFlow = mapper.readValue(is, CashFlowStatementDetail.class);
             assertThat(cashFlow).isNotNull();
 
             assertThatThrownBy(cashFlow::validate)
@@ -237,6 +238,48 @@ public class FinancialStatementDeserializerTest {
                             "Operating cash flow reconciliation failed.: Expected 7253684000, current 5481204000"
                     );
 
+        } catch (IOException e) {
+            fail(e.getMessage(), e);
+        }
+    }
+
+    @Test
+    void deserializeFullResponse() {
+        try (var is = new FileInputStream("src/test/resources/data/full_financial_statement.json")) {
+            var reports = mapper.readValue(is, FinancialStatementResponse.class);
+            assertThat(reports).isNotNull();
+
+            assertThat(reports.balanceSheet())
+                    .describedAs("Balance Sheet report is null")
+                    .isNotNull()
+                    .satisfies(balanceSheetReport -> {
+                        assertThat(balanceSheetReport.previous()).isNotNull();
+                        assertThat(balanceSheetReport.current()).isNotNull();
+                    });
+
+            assertThat(reports.incomeQuarterly())
+                    .describedAs("Income Quarterly report is null")
+                    .isNotNull()
+                    .satisfies(incomeQuarterlyReport -> {
+                        assertThat(incomeQuarterlyReport.previous()).isNotNull();
+                        assertThat(incomeQuarterlyReport.current()).isNotNull();
+                    });
+
+            assertThat(reports.incomeYearToDate())
+                    .describedAs("Income YTD report is null")
+                    .isNotNull()
+                    .satisfies(incomeYearToDateReport -> {
+                        assertThat(incomeYearToDateReport.previous()).isNotNull();
+                        assertThat(incomeYearToDateReport.current()).isNotNull();
+                    });
+
+            assertThat(reports.cashFlow())
+                    .describedAs("Cash Flow report is null")
+                    .isNotNull()
+                    .satisfies(cashFlowReport -> {
+                        assertThat(cashFlowReport.previous()).isNotNull();
+                        assertThat(cashFlowReport.current()).isNotNull();
+                    });
         } catch (IOException e) {
             fail(e.getMessage(), e);
         }
