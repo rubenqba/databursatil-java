@@ -33,9 +33,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:git@github.com:rubenqba/${project.artifactId}.git</connection>
-    <developerConnection>scm:git:git@github.com:rubenqba/${project.artifactId}.git</developerConnection>
-    <url>https://github.com/rubenqba/${project.artifactId}.git</url>
+    <connection>scm:git:https://github.com/rubenqba/databursatil-java.git</connection>
+    <developerConnection>scm:git:https://github.com/rubenqba/databursatil-java.git</developerConnection>
+    <url>https://github.com/rubenqba/databursatil-java</url>
   </scm>
   <issueManagement>
     <system>GitHub</system>
