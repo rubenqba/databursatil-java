@@ -32,4 +32,4 @@ jobs:
           version-minor: true
           maven-development-version-number: ${parsedVersion.majorVersion}.${parsedVersion.nextMinorVersion}-SNAPSHOT
           maven-release-version-number: ${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.0
-          maven-servers: '[{"id": "github", "username": "${{ github.actor }}", "password": "${{ secrets.GITHUB_TOKEN }}" }]'
+          maven-servers: '[{"id": "github", "username": "${{ github.actor }}", "password": "${{ secrets.DEPLOY_TOKEN }}" }]'
