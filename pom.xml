@@ -33,9 +33,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:https://github.com/rubenqba/databursatil-java.git</connection>
-    <developerConnection>scm:git:https://github.com/rubenqba/databursatil-java.git</developerConnection>
-    <url>https://github.com/rubenqba/databursatil-java.git</url>
+    <connection>scm:git:git@github.com:rubenqba/databursatil-java.git</connection>
+    <developerConnection>scm:git:git@github.com:rubenqba/databursatil-java.git</developerConnection>
+    <url>git@github.com:rubenqba/databursatil-java.git</url>
     <tag>HEAD</tag>
   </scm>
   <issueManagement>
