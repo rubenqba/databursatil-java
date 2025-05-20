@@ -20,19 +20,6 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Configure Maven settings
-        run: |
-          mkdir -p ~/.m2
-          echo "<settings>
-            <servers>
-              <server>
-                <id>github</id>
-                <username>${{ github.actor }}</username>
-                <password>${{ secrets.GITHUB_TOKEN }}</password>
-              </server>
-            </servers>
-          </settings>" > ~/.m2/settings.xml
-
       - name: Maven Release
         uses: qcastel/github-actions-maven-release@master
         env:
@@ -45,3 +32,4 @@ jobs:
           version-minor: true
           maven-development-version-number: ${parsedVersion.majorVersion}.${parsedVersion.nextMinorVersion}-SNAPSHOT
           maven-release-version-number: ${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.0
+          maven-servers: '[{"id": "github", "username": "${{ github.actor }}", "password": "${{ secrets.GITHUB_TOKEN }}" }]'
