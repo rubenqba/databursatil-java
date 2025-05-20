@@ -35,7 +35,8 @@
   <scm>
     <connection>scm:git:https://github.com/rubenqba/databursatil-java.git</connection>
     <developerConnection>scm:git:https://github.com/rubenqba/databursatil-java.git</developerConnection>
-    <url>https://github.com/rubenqba/databursatil-java</url>
+    <url>https://github.com/rubenqba/databursatil-java.git</url>
+    <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>GitHub</system>
@@ -66,5 +67,17 @@
   <modules>
     <module>databursatil-api-sdk</module>
   </modules>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>3.1.1</version>
+        <configuration>
+          <scmCommentPrefix>[ci skip]</scmCommentPrefix>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
