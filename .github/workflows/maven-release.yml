@@ -43,5 +43,5 @@ jobs:
           git-release-bot-name: github-actions[bot]
           git-release-bot-email: github-actions[bot]@users.noreply.github.com
           version-minor: true
-          maven-development-version-number: ${parsedVersion.majorVersion}.\${parsedVersion.nextMinorVersion}-SNAPSHOT
-          maven-release-version-number: ${parsedVersion.majorVersion}.\${parsedVersion.minorVersion}.0
+          maven-development-version-number: ${parsedVersion.majorVersion}.${parsedVersion.nextMinorVersion}-SNAPSHOT
+          maven-release-version-number: ${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.0
