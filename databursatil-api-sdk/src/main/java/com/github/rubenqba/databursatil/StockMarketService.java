@@ -12,7 +12,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 import org.springframework.web.client.RestClient;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -80,6 +83,10 @@ public class StockMarketService {
         } catch (ApiException e) {
             return Collections.emptyList();
         }
+    }
+
+    public void getCurrentPrice() {
+
     }
 
     public List<HistoricalPriceDetail> fetchHistoricalData(HistoricalFilter filter) {
